@@ -1,0 +1,875 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+}
+
+#topbar{
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 10rem;
+    background-color: #ffffff;
+}
+
+#mainHeading{
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+    cursor: pointer;
+}
+
+#mainHeading i{
+    color: white;
+    font-size: 10px;
+    background-color: #4f39f6;
+    padding: 8px 7px;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px -1px #efefef, 0 1px 3px -1px #efefef;
+    margin-right: 6px;
+}
+
+#naviagtionTabs a{
+    text-decoration: none;
+    color: rgb(84, 84, 84);
+    padding: 0 15px;
+}
+
+#naviagtionTabs a:hover{
+    color: #4f39f6;
+}
+
+#actionButtons button:first-child{
+    margin-right: 15px;
+    padding: 8px 15px;
+    color: black;
+    background-color: white;
+    border: none;
+    font-weight: 600;
+}
+
+#actionButtons button:first-child:hover{
+    border-radius: 10px;
+    color: white;
+    background-color: #4f39f6;
+    font-weight: 600;
+}
+
+#actionButtons button:first-child:hover + button:last-child{
+    color: black;
+    background-color: white;
+    font-weight: 600;
+}
+
+#actionButtons button:last-child{
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    background-color: #4f39f6;
+    border: none;
+    font-weight: 600;
+}
+
+hr {
+  border: none;
+  height: 0.02rem;
+  background-color: rgb(222, 222, 222);
+}
+
+#LandingSection{
+    padding: 0.8rem 10rem;
+    display: flex;
+    justify-content: center; 
+    /* background-color: #f5f8ff;   */
+    background-color: #f9f9fd;
+    height: calc(100vh - 90px);
+}
+
+#landingSectionLeftPart{
+    flex: 1;
+    margin-top: 6rem;
+}
+
+#landingSectionLeftPart div:nth-child(1){
+    width: max-content;
+    display: flex;
+    align-items: center;
+    border: solid 2px #e2e3e7;
+    border-radius: 70px;
+    padding: 5px 15px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #4f39f6;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px #eaeaea, 0 2px 4px -1px #eaeaea;
+}
+#landingSectionLeftPart div:nth-child(1) i{
+    font-size: 6px;
+    margin-right: 10px;
+}
+
+#landingSectionLeftPart div:nth-child(2){
+    font-size: 28px;
+    padding: 12px 0;
+}
+
+#landingSectionLeftPart div:nth-child(2) span{
+    color: #4f39f6;
+}
+
+#landingSectionLeftPart div:nth-child(3){
+    color: rgb(113, 113, 113);
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+#landingSectionLeftPart div:nth-child(4){
+    margin-bottom: 1rem;
+}
+
+#landingSectionLeftPart div:nth-child(4) button:first-child{
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: white;
+    background-color: #4f39f6;
+    border: none;
+    margin-right: 5px;
+}
+
+#landingSectionLeftPart div:nth-child(4) button:first-child i{
+    margin-left: 10px;
+    margin-right: 5px;
+    font-size: 13px;
+}
+
+#landingSectionLeftPart div:nth-child(4) button:last-child{
+    padding: 8px 12px;
+    color: black;
+    background-color: white;
+    border: solid 2px #e2e3e7;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#landingSectionLeftPart div:nth-child(4) button:last-child:hover{
+    border-radius: 8px;
+    color: white;
+    background-color: #4f39f6;
+    border: none;
+    font-weight: 400;
+}
+
+#landingSectionLeftPart div:nth-child(4) button:last-child:hover i { 
+    color: #ffffff;
+    -webkit-text-stroke: 1px #ffffff; 
+}
+
+
+
+#landingSectionLeftPart div:nth-child(4):has(button:last-child:hover) button:first-child {
+    color: black;
+    background-color: white;
+    border: solid 2px #e2e3e7;
+    border-radius: 8px;
+    font-weight: 500;
+}
+
+#landingSectionLeftPart div:nth-child(4) button:last-child i{
+    color: transparent; 
+    -webkit-text-stroke: 1px #000000; 
+    margin-left: 5px;
+    margin-right: 10px;
+    font-size: 13px;
+}
+
+#landingSectionLeftPart div:nth-child(5){
+    color: rgb(113, 113, 113);
+    font-size: 13px;
+    margin-top: 1rem;
+}
+#landingSectionLeftPart div:nth-child(5) i{
+    font-size: 2px;
+}
+#landingSectionRightPart{
+    flex: 1;
+    margin-top: 6rem;
+}
+
+
+/* Teams section */
+#TeamsSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 3rem;
+    color: rgb(156, 156, 156);
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 10rem;
+}
+
+#TeamsSection div{
+    display: flex;
+    margin: 0 0 0.5rem 0;
+}
+
+#TeamsSection div div{
+    padding: 30px 70px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(185, 185, 185);
+}
+
+.PageContainer{
+    display: flex;
+    padding: 6rem 10rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pageHeading{
+    color: #4F39F6;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.35px;
+    text-transform: uppercase;
+}
+
+.pageLine{
+    color: #101828;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 47.5px;
+    letter-spacing: -0.95px;
+}
+
+.page2ndline{
+    color: #4A5565;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27.625px;
+}
+
+
+#Features div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#Features div div{
+    display: flex;
+    flex-direction: column;
+    border-radius: 14px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+    padding: 28px;
+    text-align: left;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Features div div i{
+    font-size: 20px;
+    color: #4f39f6;
+    background-color: #eef2ff;
+    width: max-content;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+#Features div div p:nth-child(2){
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+#Features div div p{
+    font-size: 16px;
+}
+
+/* WHY section */
+.table {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    border: 1px solid #f0f0f0;
+    overflow: hidden;
+    width: 75%;
+    margin-top: 3rem;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.col-task { width: 40%; }
+.col-spreadsheets { width: 15%; }
+.col-email { width: 15%; }
+.col-nimbus {width: 15%;}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 15px 20px;
+    text-align: center;
+    border-bottom: 1px solid #f7f7f7;
+}
+
+.comparison-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.comparison-table .align-left{
+    text-align: left;
+}
+
+.comparison-table th {
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.comparison-table th.align-left {
+    color: #1f2937;
+    font-size: 16px;
+}
+
+.comparison-table td.align-left {
+    color: #6a6a6a;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.comparison-table .nimbus-header {
+    background-color: #5741ff;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.icon-check {
+    color: #5741ff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.icon-cross {
+    color: rgb(225, 219, 219);;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.greyrow{
+    background-color: #F9FAFB;
+}
+
+.purplecell{
+    background-color: #eef2ff;
+}
+
+#SurveySection{
+    display: flex;
+    justify-content: center;
+    color: rgb(156, 156, 156);
+    background-color: #4f39f6;
+    padding: 4rem 10rem;
+}
+
+#SurveySection div{
+    flex: 1;
+    text-align: center;
+}
+
+#SurveySection div p:nth-child(1){
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: white;
+    font-weight: 700;
+}
+
+#SurveySection div p:last-child{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #C6D2FF;
+    line-height: 22.5px;
+}
+
+
+#alltestimonials{
+    display: flex;
+    padding-right: 0.008px;
+    padding-top: 3.5rem;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 24px;
+    align-self: stretch;
+}
+.CompleteTestimonial{
+    display: flex;
+    width: 362.664px;
+    padding: 28px;
+    border-radius: 14px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+#Features div div svg{
+    width: 28px;
+    height: 28px;
+}
+
+#Testinomials div div p{
+    color: #364153;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.Imagebanner{
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    border-radius: 50%;
+}
+
+.Imagebanner3{
+    background: url(../assets/Image\ \(Mia\ Chen\).png) lightgray 50% / cover no-repeat;
+}
+
+.Imagebanner2{
+    background: url(../assets/Image\ \(Daniel\ Okafor\).png) lightgray 50% / cover no-repeat;
+}
+
+.Imagebanner1{
+    background: url(../assets/Image\ \(Sofia\ Reyes\).png) lightgray 50% / cover no-repeat;
+}
+
+.TestimonialsInfo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.TestimonialsInfo p:first-child{
+    color: #101828;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22.5px;
+}
+
+.TestimonialsInfo p:last-child{
+    color: #6A7282;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}   
+
+.TestimonialsInfo div{
+    display: flex;
+    flex-direction: column;
+}
+
+#PricingContainer{
+    display: flex;
+    padding-top: 64px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#innerPricingContainer{
+    display: flex;
+    gap: 24px;
+}
+
+.PricingPack{
+    display: flex;
+    padding: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    border-radius: 14px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.PricingPack h3{
+    color: #101828;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 27px;
+}
+
+.pricepacktagline{
+    color: #6A7282;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.PricingPack div{
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+    align-self: stretch;
+}
+
+.PricingPack div p:first-child{
+    color: #101828;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 40px;
+}
+
+.PricingPack div p:last-child{
+    color: #6A7282;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.PricingPack .pricebutton{
+    display: flex;
+    height: 40px;
+    padding: 0 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    border: 1px solid #E5E7EB;
+    background: #FFF;
+}
+
+.PricingPack .List{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.PricingPack .List div{
+    display: flex;
+    align-items: center;
+}
+
+.PricingPack .List p{
+    color: #4A5565;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+#PopularPricingPack{
+    display: flex;
+    position: relative;
+    padding: 28px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 14px;
+    border: 1px solid #4F39F6;
+    background: #FFF;
+    box-shadow: 0 0 0 1px #4F39F6, 0 18px 40px -12px rgba(49, 46, 129, 0.25);
+}
+
+#Popularpricebutton{
+    display: flex;
+    padding: 0 24px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    border-radius: 8px;
+    background: #4F46E5;
+    color: white;
+}
+
+#PopularPricingPack #PopularBanner{
+    display: flex;
+    padding: 4px 12px;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    right: 75px;
+    top: -11px;
+    border-radius: 16777200px;
+    background: #4F39F6;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
+}
+
+#featurelink{
+    display: flex;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+#featurelink p{
+    color: #4F46E5;
+    text-align: center;
+    font-family: Inter;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+#innerfeaturelink{
+    display: flex;
+    height: 36px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+#NimbusContainer{
+    display: flex;
+    padding-top: 56px;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+#innerNimbusContainer{
+    display: flex;
+    height: 376px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    align-self: stretch;
+}
+
+.CornerImages{
+    height: 374px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.middleImage{
+    height: 178px;
+    flex-shrink: 0;
+    align-self: stretch;
+}
+
+.greyPage{
+    background-color: #F9FAFB;
+}
+
+#FAQcontainer{
+    display: flex;
+    width: 696px;
+    height: 324px;
+    padding-top: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Faqs{
+    display: flex;
+    align-items: flex-start;
+    align-self: stretch;
+    justify-content: space-between;
+    border-bottom: 1px solid #E5E7EB;
+    padding: 16px 0;
+    color: #101828;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+#ReadytogetTeam{
+    display: flex;
+    padding: 5rem 12rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#getteamcontainer{
+    height: 317px;
+    align-self: stretch;
+    border-radius: 24px;
+    background: linear-gradient(135deg, #4F39F6 0%, #372AAC 100%);
+    box-shadow: 0 18px 40px -12px rgba(49, 46, 129, 0.25);
+    position: relative;
+}
+
+#upperBubble{
+    width: 256px;
+    height: 256px;
+    border-radius: 16777200px;
+    background: rgba(255, 255, 255, 0.10);
+    position: absolute;
+    top: -64px;
+    left: 844px;
+}
+
+#lowerBubble{
+    width: 224px;
+    height: 224px;
+    border-radius: 16777200px;
+    background: rgba(255, 255, 255, 0.10);
+    position: absolute;
+    top: 173px;
+    left: -40px;
+}
+
+#innergetteamcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    top: 4rem;
+}
+
+.getteamheadingcontainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.getteamheadingcontainer p{
+    color: #FFF;
+    text-align: center;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -1px;
+}
+
+.getteamparagraphcontainer{
+    display: flex;
+    padding-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+}
+
+.getteamparagraphcontainer p{
+    color: #E0E7FF;
+    text-align: center;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.5px;
+    width: 400px;
+}
+
+.getteambuttonscontainer{
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10.414px;
+    align-self: stretch;
+    margin-top: 2rem;
+}
+
+.getteambuttonscontainer button:first-child{
+    display: flex;
+    align-items: center;
+    color: #3730A3;
+    gap: 8px;
+    border-radius: 8px;
+    background: #EEF2FF;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.getteambuttonscontainer button:last-child{
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    background: transparent;
+    height: 40px;
+    padding: 0 16px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+footer{
+    padding: 4rem 10rem;
+}
+
+#footerlinkscontainer{
+    display: flex;
+    height: 208px;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 48px;
+    align-self: stretch;
+}
+
+.linkcontainer{
+    display: flex;
+    width: 345.039px;
+    max-width: 384px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footerlinkHead{
+    display: flex;
+    padding-right: 236.039px;
+    align-items: center;
+    align-self: stretch;
+}
+
+.footerlinkHead i{
+    color: white;
+    font-size: 10px;
+    background-color: #4f39f6;
+    padding: 8px 7px;
+    border-radius: 9px;
+    box-shadow: 0 2px 4px -1px #efefef, 0 1px 3px -1px #efefef;
+    margin-right: 6px;
+}
+
+.footerlinkHead p{
+    font-weight: 700;
+    cursor: pointer;
+}
