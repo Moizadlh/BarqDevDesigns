@@ -78,18 +78,15 @@
 @media (max-width: 768px) {
     #topbar {
         padding: 0.8rem 2rem;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1rem;
     }
-    #naviagtionTabs {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 10px;
+    #barmenu{
+        display: block;
     }
-    #naviagtionTabs a {
-        padding: 0 5px;
+    #naviagtionTabs{
+        display: none;
+    }
+    #actionButtons{
+        display: none;
     }
     #LandingSection {
         padding: 3rem 2rem;
@@ -104,6 +101,9 @@
     #TeamsSection {
         padding: 0 2rem;
     }
+    #TeamsSection div{
+        gap:0px
+    }
     .PageContainer {
         padding: 3rem 2rem;
     }
@@ -115,6 +115,10 @@
         display: block;
         overflow-x: auto;
     }
+    .col-task { width: 30%; }
+    .col-spreadsheets { width: 10%; }
+    .col-email { width: 10%; }
+    .col-nimbus {width: 10%;}
     #SurveySection {
         padding: 3rem 2rem;
     }
@@ -202,17 +206,11 @@
     #topbar {
         padding: 0.8rem 1rem;
     }
-    #actionButtons {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        width: 100%;
-    }
-    #actionButtons button:first-child {
-        margin-right: 0;
-    }
     #LandingSection {
         padding: 2rem 1rem;
+    }
+    #TeamsSection div{
+        gap:20px
     }
     .PageContainer {
         padding: 2rem 1rem;

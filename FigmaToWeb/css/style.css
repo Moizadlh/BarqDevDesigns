@@ -1,6 +1,10 @@
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
+    max-width: 1440px;
+    padding: 0;
+    scrollbar-width: thin;
+    scrollbar-color: #4f39f6 #ffffff;
 }
 
 #topbar{
@@ -40,6 +44,10 @@
 
 #naviagtionTabs a:hover{
     color: #4f39f6;
+}
+
+#barmenu{
+    display: none;
 }
 
 #actionButtons button:first-child{
@@ -203,7 +211,7 @@ hr {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 3rem;
+    margin: 3rem 0;
     color: rgb(156, 156, 156);
     font-size: 14px;
     font-family: Arial, Helvetica, sans-serif;
@@ -212,11 +220,16 @@ hr {
 
 #TeamsSection div{
     display: flex;
-    margin: 0 0 0.5rem 0;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 80px;
+    align-self: stretch;
+    padding: 2rem 0 0 0;
 }
 
 #TeamsSection div div{
-    padding: 30px 70px;
+    flex: 1;
+    box-sizing: border-box; 
     font-size: 18px;
     font-weight: 700;
     color: rgb(185, 185, 185);
@@ -734,7 +747,7 @@ hr {
     background: rgba(255, 255, 255, 0.10);
     position: absolute;
     top: -64px;
-    left: 844px;
+    left: 750px;
 }
 
 #lowerBubble{
