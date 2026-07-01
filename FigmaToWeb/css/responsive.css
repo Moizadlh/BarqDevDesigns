@@ -1,0 +1,235 @@
+@media (max-width: 1024px) {
+    #topbar {
+        padding: 0.8rem 5rem;
+    }
+    #LandingSection {
+        padding: 4rem 5rem;
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    #landingSectionLeftPart div:nth-child(1),
+    #landingSectionLeftPart div:nth-child(4) {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #landingSectionRightPart {
+        margin-top: 3rem;
+    }
+    #landingSectionRightPart img {
+        width: 100%;
+    }
+    #TeamsSection {
+        padding: 0 5rem;
+    }
+    #TeamsSection div {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #TeamsSection div div {
+        padding: 15px 30px;
+    }
+    .PageContainer {
+        padding: 4rem 5rem;
+    }
+    #Features div {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .table {
+        width: 90%;
+        overflow-x: auto;
+    }
+    #SurveySection {
+        padding: 4rem 5rem;
+        flex-wrap: wrap;
+    }
+    #SurveySection div {
+        flex: 1 1 50%;
+        margin-bottom: 2rem;
+    }
+    #innerPricingContainer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #innerNimbusContainer {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .CornerImages, .middleImage {
+        width: 45%;
+        height: auto;
+        object-fit: cover;
+    }
+    #ReadytogetTeam {
+        padding: 5rem 5rem;
+    }
+    footer {
+        padding: 4rem 5rem;
+    }
+    #footerlinkscontainer {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    #topbar {
+        padding: 0.8rem 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+    }
+    #naviagtionTabs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+    #naviagtionTabs a {
+        padding: 0 5px;
+    }
+    #LandingSection {
+        padding: 3rem 2rem;
+    }
+    #landingSectionLeftPart div:nth-child(2) {
+        font-size: 20px;
+    }
+    #landingSectionLeftPart div:nth-child(3) pre {
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+    #TeamsSection {
+        padding: 0 2rem;
+    }
+    .PageContainer {
+        padding: 3rem 2rem;
+    }
+    #Features div {
+        grid-template-columns: 1fr;
+    }
+    .table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+    }
+    #SurveySection {
+        padding: 3rem 2rem;
+    }
+    #alltestimonials {
+        flex-direction: column;
+        align-items: center;
+    }
+    .CompleteTestimonial {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #innerPricingContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+    #PopularPricingPack #PopularBanner {
+        right: 20px;
+    }
+    .PricingPack {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .CornerImages, .middleImage {
+        width: 100%;
+    }
+    #FAQcontainer {
+        width: 100%;
+        height: auto;
+    }
+    #getteamcontainer {
+        height: auto;
+        padding: 2rem 0;
+        overflow: hidden;
+    }
+    #innergetteamcontainer {
+        top: 0;
+        padding: 0 1rem;
+    }
+    .getteamparagraphcontainer p {
+        width: 100%;
+    }
+    .getteambuttonscontainer {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    #ReadytogetTeam {
+        padding: 3rem 2rem;
+    }
+    footer {
+        padding: 3rem 2rem;
+    }
+    #footerlinkscontainer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .footerlinkHead {
+        padding-right: 0;
+        justify-content: center;
+    }
+    .linkcontainer {
+        align-items: center;
+    }
+    .linkcontainer form {
+        flex-direction: column;
+        width: 100%;
+    }
+    .linkcontainer form input {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .linkcontainer form button {
+        width: 100%;
+    }
+    #innerFooterprofilelinks {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #topbar {
+        padding: 0.8rem 1rem;
+    }
+    #actionButtons {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    #actionButtons button:first-child {
+        margin-right: 0;
+    }
+    #LandingSection {
+        padding: 2rem 1rem;
+    }
+    .PageContainer {
+        padding: 2rem 1rem;
+    }
+    #TeamsSection {
+        padding: 0 1rem;
+    }
+    #SurveySection {
+        padding: 2rem 1rem;
+    }
+    #SurveySection div {
+        flex: 1 1 100%;
+    }
+    #ReadytogetTeam {
+        padding: 2rem 1rem;
+    }
+    footer {
+        padding: 2rem 1rem;
+    }
+}
