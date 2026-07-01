@@ -1,6 +1,8 @@
 @media (max-width: 1024px) {
     #topbar {
-        padding: 0.8rem 5rem;
+        padding: 0 2rem;
+        height: 48px;
+        width: 990px;
     }
     #LandingSection {
         padding: 4rem 5rem;
@@ -77,7 +79,9 @@
 
 @media (max-width: 768px) {
     #topbar {
-        padding: 0.8rem 2rem;
+        padding: 0 1rem;
+        height: 42px;
+        width: 700px;
     }
     #barmenu{
         display: block;
@@ -187,7 +191,8 @@
 
 @media (max-width: 480px) {
     #topbar {
-        padding: 0.8rem 1rem;
+        height: 36px;
+        width: 350px;
     }
     #LandingSection {
         padding: 2rem 1rem;
