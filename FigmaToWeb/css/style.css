@@ -1,5 +1,5 @@
 *{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     max-width: 1440px;
     padding: 0;
@@ -10,6 +10,7 @@
 #topbar{
     position: sticky;
     top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,35 +51,43 @@
     display: none;
 }
 
-#actionButtons button:first-child{
+#actionButtons a:first-child{
     margin-right: 15px;
     padding: 8px 15px;
-    color: black;
+    color: #101828;
     background-color: white;
     border: none;
-    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
 }
 
-#actionButtons button:first-child:hover{
+#actionButtons a:first-child:hover{
     border-radius: 10px;
     color: white;
     background-color: #4f39f6;
     font-weight: 600;
 }
 
-#actionButtons button:first-child:hover + button:last-child{
-    color: black;
+#actionButtons a:first-child:hover + a:last-child{
+    color: #101828;
     background-color: white;
     font-weight: 600;
 }
 
-#actionButtons button:last-child{
+#actionButtons a:last-child{
     padding: 8px 15px;
     border-radius: 10px;
     color: white;
     background-color: #4f39f6;
     border: none;
-    font-weight: 600;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
 }
 
 hr {
@@ -90,10 +99,8 @@ hr {
 #LandingSection{
     padding: 6rem 10rem;
     display: flex;
-    justify-content: center; 
-    /* background-color: #f5f8ff;   */
+    justify-content: center;
     background-color: #f9f9fd;
-    height: calc(100vh - 90px);
 }
 
 #landingSectionLeftPart{
@@ -307,24 +314,26 @@ hr {
 
 #Features div div p:nth-child(2){
     margin-top: 10px;
+    color: #101828;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 0;
 }
 
 #Features div div p{
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* WHY section */
 .table {
     background-color: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-    border: 1px solid #f0f0f0;
     overflow: hidden;
     width: 75%;
     margin-top: 3rem;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0 4px 12px -2px rgba(17, 24, 39, 0.10), 0 2px 6px -2px rgba(17, 24, 39, 0.06);
 }
 
 .comparison-table {
@@ -404,6 +413,7 @@ hr {
     color: rgb(156, 156, 156);
     background-color: #4f39f6;
     padding: 4rem 10rem;
+    gap: 32px;
 }
 
 #SurveySection div{
@@ -859,7 +869,8 @@ footer{
 
 .linkcontainer{
     display: flex;
-    width: 345.039px;
+    flex: 1;
+    /* width: 345.039px; */
     max-width: 384px;
     flex-direction: column;
     align-items: flex-start;
@@ -920,7 +931,9 @@ footer{
     padding: 4px 12px;
     border-radius: 8px;
     background: #4F46E5;
+    color: #ffffff;
     border: none;
+    cursor: pointer;
 }
 
 .linkcontainer h4{
@@ -944,6 +957,7 @@ footer{
     padding-top: 12px;
     font-weight: 400;
     line-height: 22.5px;
+    cursor: pointer;
 }
 
 #footerprofilelinks{
@@ -985,4 +999,8 @@ footer{
     width: 18px;
     height: 18px;
     flex-shrink: 0;
+}
+
+.linkcontainer ul li:hover{
+    color: #4f39f6;
 }
