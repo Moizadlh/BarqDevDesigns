@@ -17,7 +17,9 @@
     display: flex;
     font-weight: 700;
     align-items: center;
-    cursor: pointer;
+    /* cursor: pointer; */
+    text-decoration: none;
+    color: #101828;
 }
 
 #mainHeading i{
@@ -78,7 +80,7 @@ hr {
 }
 
 #LandingSection{
-    padding: 0.8rem 10rem;
+    padding: 6rem 10rem;
     display: flex;
     justify-content: center; 
     /* background-color: #f5f8ff;   */
@@ -88,7 +90,6 @@ hr {
 
 #landingSectionLeftPart{
     flex: 1;
-    margin-top: 6rem;
 }
 
 #landingSectionLeftPart div:nth-child(1){
@@ -194,7 +195,6 @@ hr {
 }
 #landingSectionRightPart{
     flex: 1;
-    margin-top: 6rem;
 }
 
 
@@ -857,6 +857,8 @@ footer{
     padding-right: 236.039px;
     align-items: center;
     align-self: stretch;
+    text-decoration: none;
+    color: #101828;;
 }
 
 .footerlinkHead i{
@@ -872,4 +874,102 @@ footer{
 .footerlinkHead p{
     font-weight: 700;
     cursor: pointer;
+}
+
+#footerintro{
+    color: #6A7282;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24.375px;
+    padding-top: 16px;
+}
+
+.linkcontainer form{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+    padding-top: 24px;
+    align-items: center;
+}
+
+.linkcontainer form input{
+    height: 32px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(0, 0, 0, 0.00);
+    background: #FFF;
+}
+
+.linkcontainer form button{
+    height: 40px;
+    padding: 4px 12px;
+    border-radius: 8px;
+    background: #4F46E5;
+    border: none;
+}
+
+.linkcontainer h4{
+    color: #101828;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.linkcontainer ul{
+    list-style-type: none;
+    padding: 0;
+    padding-top: 16px;
+}
+
+.linkcontainer ul li{
+    color: #6A7282;
+    font-size: 15px;
+    font-style: normal;
+    padding-top: 12px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+#footerprofilelinks{
+    margin-top:3rem;
+}
+
+#innerFooterprofilelinks{
+    display: flex;
+    padding-top: 32px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+#innerFooterprofilelinks p{
+    color: #6A7282;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+#profileIcons{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#profileIcons .icon{
+    display: flex;
+    width: 36px;
+    height: 36px;
+    padding: 9px;
+    justify-content: center;
+    align-items: center;
+}
+
+#profileIcons .icon svg{
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
 }
