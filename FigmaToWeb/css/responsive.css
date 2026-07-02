@@ -90,10 +90,10 @@
         right: 0;
     }
     #lowerBubble{
-        width: 200px;
-        height: 200px;
+        width: 180px;
+        height: 180px;
         top: 173px;
-        left: -40px;
+        left: -30px;
     }
     footer {
         padding: 4rem 5rem;
