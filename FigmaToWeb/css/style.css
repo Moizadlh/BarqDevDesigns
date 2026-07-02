@@ -366,6 +366,13 @@ hr {
 }
 
 /* WHY section */
+#WhySection{
+    width:900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .table {
     background-color: #ffffff;
     overflow: hidden;
@@ -563,7 +570,7 @@ hr {
     display: flex;
     padding-top: 64px;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
 }
 
 #innerPricingContainer{
@@ -573,6 +580,7 @@ hr {
 
 .PricingPack{
     display: flex;
+    width: 320px;
     padding: 28px;
     flex-direction: column;
     align-items: flex-start;
@@ -748,6 +756,12 @@ hr {
 
 .greyPage{
     background-color: #F9FAFB;
+}
+
+#FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 #FAQcontainer{

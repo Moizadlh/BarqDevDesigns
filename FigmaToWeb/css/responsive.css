@@ -44,11 +44,11 @@
         padding: 4rem 5rem;
     }
     .PagePaddingWidth{
-        padding: 4rem 2rem;
-        width: 990px;
+        padding: 4rem 1.5rem;
+        width: 950px;
     }
     #Features div div{
-        width: 320px; 
+        width: 300px; 
     }
     .table {
         width: 75%;
@@ -65,6 +65,9 @@
     #innerPricingContainer {
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .PricingPack{
+        width: 220px;
     }
     #innerNimbusContainer {
         flex-wrap: wrap;
@@ -137,6 +140,9 @@
     #Features div div{
         width: 340px; 
     }
+    #WhySection{
+        width: 600px;
+    }
     .table {
         width: 100%;
         display: block;
@@ -152,15 +158,15 @@
         width: 100%;
         box-sizing: border-box;
     }
-    #innerPricingContainer {
+    /* #innerPricingContainer {
         flex-direction: column;
         align-items: center;
-    }
+    } */
     #PopularPricingPack #PopularBanner {
         right: 20px;
     }
     .PricingPack {
-        width: 100%;
+        width: 300px;
         box-sizing: border-box;
     }
     .CornerImages, .middleImage {
@@ -233,7 +239,7 @@
     }
     .PagePaddingWidth{
         padding: 2rem 1rem;
-        width: 350px;
+        width: 360px;
     }
     #TeamsSection {
         padding: 1.5rem 1rem;
@@ -244,6 +250,9 @@
     } 
     #Features div div{
         width: auto;
+    }
+    #WhySection{
+        width: 350px;
     }
     #SurveySection {
         padding: 1.5rem 1rem;
