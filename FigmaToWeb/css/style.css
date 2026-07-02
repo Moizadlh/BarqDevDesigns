@@ -54,10 +54,15 @@ header{
     margin-right: 6px;
 }
 
+#naviagtionTabs{
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
 #naviagtionTabs a{
     text-decoration: none;
     color: rgb(84, 84, 84);
-    padding: 0 15px;
 }
 
 #naviagtionTabs a:hover{
@@ -69,8 +74,9 @@ header{
 }
 
 #actionButtons a:first-child{
-    margin-right: 15px;
-    padding: 8px 15px;
+    margin-right: 8px;
+    padding: 8px 16px;
+    height: 36px;
     color: #101828;
     background-color: white;
     border: none;
@@ -95,7 +101,8 @@ header{
 }
 
 #actionButtons a:last-child{
-    padding: 8px 15px;
+    padding: 8px 16px;
+    height: 36px;
     border-radius: 10px;
     color: white;
     background-color: #4f39f6;
@@ -127,6 +134,7 @@ hr {
 
 #LandingSection{
     padding: 6rem 2rem;
+    gap: 64px;
     width: 1200px;
     max-width: 1200px;
     display: flex;
