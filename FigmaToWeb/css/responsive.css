@@ -1,12 +1,16 @@
 @media (max-width: 1024px) {
+    .width-max{
+        max-width: 1024;
+    }
     #topbar {
         padding: 0 2rem;
         height: 48px;
         width: 990px;
     }
     #LandingSection {
-        padding: 4rem 5rem;
+        padding: 3.5rem 1.5rem;
         height: auto;
+        width: 990px;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -19,6 +23,7 @@
     }
     #landingSectionRightPart {
         margin-top: 3rem;
+        width: 70%;
     }
     #landingSectionRightPart img {
         width: 100%;
@@ -29,9 +34,10 @@
     #TeamsSection div {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 30px;
     }
     #TeamsSection div div {
-        padding: 15px 30px;
+        padding: 15px 15px;
     }
     .PageContainer {
         padding: 4rem 5rem;
@@ -78,6 +84,9 @@
 }
 
 @media (max-width: 768px) {
+    .width-max{
+        max-width: 768px;
+    }
     #topbar {
         padding: 0 1rem;
         height: 42px;
@@ -93,7 +102,8 @@
         display: none;
     }
     #LandingSection {
-        padding: 3rem 2rem;
+        padding: 2rem 1rem;
+         width: 700px;
     }
     #landingSectionLeftPart div:nth-child(2) {
         font-size: 20px;
@@ -195,7 +205,8 @@
         width: 350px;
     }
     #LandingSection {
-        padding: 2rem 1rem;
+        padding: 1.5rem 0.5rem;
+        width: 350px;
     }
     #TeamsSection div{
         gap:20px
@@ -205,6 +216,7 @@
     }
     #TeamsSection {
         padding: 0 1rem;
+        margin: 2rem 0;
     }
     #SurveySection {
         padding: 1.5rem 1rem;
