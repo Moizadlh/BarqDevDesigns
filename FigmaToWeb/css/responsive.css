@@ -96,7 +96,8 @@
         left: -30px;
     }
     footer {
-        padding: 4rem 5rem;
+        padding: 4rem 1.5rem;
+        width: 950px;
     }
     #footerlinkscontainer {
         flex-wrap: wrap;
@@ -227,11 +228,11 @@
         left: -40px;
     }
     footer {
-        padding: 3rem 2rem 1rem 2rem;
+        padding: 3rem 1.5rem 1rem 1.5rem;
+        width: 700px;
     }
     .footerlinkHead {
         padding-right: 0;
-        justify-content: center;
     }
     .linkcontainer form {
         display: none;
@@ -318,11 +319,12 @@
     }
     footer {
         padding: 2rem 1rem 1rem 1rem;
+        width: 350px;
     }
     #footerlinkscontainer {
         flex-wrap: wrap;
         height: auto;
-        gap: 2rem 6rem;
+        gap: 2rem 5rem;
     }
     #profileIcons .icon{
         width: 18px;

@@ -910,7 +910,8 @@ hr {
 }
 
 footer{
-    padding: 4rem 10rem;
+    width: 1200px;
+    padding: 4rem 2rem;
 }
 
 #footerlinkscontainer{
