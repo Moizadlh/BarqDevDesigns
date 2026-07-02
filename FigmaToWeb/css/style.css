@@ -7,6 +7,13 @@
     scrollbar-color: #4f39f6 #ffffff;
 }
 
+.width-max{
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 header{
     max-width: 1440px;
     display: flex;
@@ -15,6 +22,7 @@ header{
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #ffffff;
 }
 
 #topbar{
@@ -97,6 +105,10 @@ header{
     font-weight: 500;
     line-height: 20px;
     text-decoration: none;
+}
+
+#actionButtons a:last-child:hover{
+    background-color: #1a0d7a;
 }
 
 hr {
@@ -306,13 +318,16 @@ hr {
     line-height: 27.625px;
 }
 
+.PagePaddingWidth{
+    padding: 6rem 2rem;
+    width: 1200px;
+}
 
 #Features div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
-    width: 100%;
-    padding: 20px;
+    padding: 56px 0 0 0;
     box-sizing: border-box;
 }
 
@@ -322,6 +337,7 @@ hr {
     border-radius: 14px;
     border: 1px solid #E5E7EB;
     background: #FFF;
+    width: 362.664px;
     padding: 28px;
     text-align: left;
     box-sizing: border-box;

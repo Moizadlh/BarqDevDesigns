@@ -43,8 +43,12 @@
     .PageContainer {
         padding: 4rem 5rem;
     }
-    #Features div {
-        grid-template-columns: repeat(2, 1fr);
+    .PagePaddingWidth{
+        padding: 4rem 2rem;
+        width: 990px;
+    }
+    #Features div div{
+        width: 320px; 
     }
     .table {
         width: 75%;
@@ -123,8 +127,15 @@
     .PageContainer {
         padding: 3rem 2rem;
     }
+    .PagePaddingWidth{
+        padding: 3rem 1.5rem;
+        width: 700px;
+    }
     #Features div {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    #Features div div{
+        width: 340px; 
     }
     .table {
         width: 100%;
@@ -220,9 +231,19 @@
     .PageContainer {
         padding: 2rem 1rem;
     }
+    .PagePaddingWidth{
+        padding: 2rem 1rem;
+        width: 350px;
+    }
     #TeamsSection {
         padding: 1.5rem 1rem;
         width: 350px;
+    }
+    #Features div {
+        grid-template-columns: 1fr;
+    } 
+    #Features div div{
+        width: auto;
     }
     #SurveySection {
         padding: 1.5rem 1rem;
