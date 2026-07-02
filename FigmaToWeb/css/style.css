@@ -790,7 +790,8 @@ hr {
 
 #ReadytogetTeam{
     display: flex;
-    padding: 5rem 12rem;
+    padding: 5rem 2rem;
+    width: 1200px;
     flex-direction: column;
     align-items: flex-start;
 }
@@ -811,7 +812,7 @@ hr {
     background: rgba(255, 255, 255, 0.10);
     position: absolute;
     top: -64px;
-    left: 750px;
+    left: 1000px;
 }
 
 #lowerBubble{

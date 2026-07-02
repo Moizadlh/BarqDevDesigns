@@ -79,7 +79,21 @@
         object-fit: cover;
     }
     #ReadytogetTeam {
-        padding: 5rem 5rem;
+        padding: 4rem 1.5rem;
+        width: 950px;
+    }
+    #upperBubble{
+        width: 200px;
+        height: 200px;
+        left: 780px;
+        top: -50px;
+        right: 0;
+    }
+    #lowerBubble{
+        width: 200px;
+        height: 200px;
+        top: 173px;
+        left: -40px;
     }
     footer {
         padding: 4rem 5rem;
@@ -196,7 +210,21 @@
         margin-top: 1rem;
     }
     #ReadytogetTeam {
-        padding: 3rem 2rem;
+        padding: 3rem 1.5rem;
+        width: 700px;
+    }
+    #upperBubble{
+        width: 150px;
+        height: 150px;
+        left: 580px;
+        top: -35px;
+        right: 0;
+    }
+    #lowerBubble{
+        width: 150px;
+        height: 150px;
+        top: 150px;
+        left: -40px;
     }
     footer {
         padding: 3rem 2rem 1rem 2rem;
@@ -273,6 +301,20 @@
     } */
     #ReadytogetTeam {
         padding: 2rem 1rem;
+        width: 350px;
+    }
+    #upperBubble{
+        width: 100px;
+        height: 100px;
+        left: 280px;
+        top: -40px;
+        right: 0;
+    }
+    #lowerBubble{
+        width: 100px;
+        height: 100px;
+        top: 280px;
+        left: -30px;
     }
     footer {
         padding: 2rem 1rem 1rem 1rem;
