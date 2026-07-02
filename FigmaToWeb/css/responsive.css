@@ -29,7 +29,8 @@
         width: 100%;
     }
     #TeamsSection {
-        padding: 0 5rem;
+        padding: 2rem 1.5rem;
+        width: 990px;
     }
     #TeamsSection div {
         flex-wrap: wrap;
@@ -113,7 +114,8 @@
         font-size: 16px;
     }
     #TeamsSection {
-        padding: 0 2rem;
+        padding: 1.5rem 1rem;
+        width: 700px;
     }
     #TeamsSection div{
         gap:0px
@@ -208,6 +210,10 @@
         padding: 1.5rem 0.5rem;
         width: 350px;
     }
+    #landingSectionRightPart{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
     #TeamsSection div{
         gap:20px
     }
@@ -215,8 +221,8 @@
         padding: 2rem 1rem;
     }
     #TeamsSection {
-        padding: 0 1rem;
-        margin: 2rem 0;
+        padding: 1.5rem 1rem;
+        width: 350px;
     }
     #SurveySection {
         padding: 1.5rem 1rem;
