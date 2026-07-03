@@ -1,21 +1,18 @@
 *{
     font-family: 'Inter', sans-serif;
     margin: 0;
-    max-width: 1440px;
     padding: 0;
     scrollbar-width: thin;
     scrollbar-color: #4f39f6 #ffffff;
 }
 
-.width-max{
-    max-width: 1440px;
+.encenter-section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 header{
-    max-width: 1440px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +22,7 @@ header{
     background-color: #ffffff;
 }
 
-#topbar{
+.main-navigation{
     height: 64px;
     width: 1200px;
     display: flex;
@@ -35,45 +32,54 @@ header{
     background-color: #ffffff;
 }
 
-#mainHeading{
+.brand-logo-link{
     display: flex;
     font-weight: 700;
     align-items: center;
-    /* cursor: pointer; */
+    cursor: pointer;
     text-decoration: none;
     color: #101828;
+    gap: 8px;
 }
 
-#mainHeading i{
-    color: white;
-    font-size: 10px;
-    background-color: #4f39f6;
-    padding: 8px 7px;
-    border-radius: 9px;
-    box-shadow: 0 2px 4px -1px #efefef, 0 1px 3px -1px #efefef;
-    margin-right: 6px;
+.brand-logo-link div{
+    display: flex;
+    width: 18px;
+    height: 18px;
+    padding: 7px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: #4F39F6;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
 }
 
-#naviagtionTabs{
+.brand-logo-link svg{
+    fill: #FFF;
+    width: 12.943px;
+    height: 9.116px;
+}
+
+.nav-links-menu{
     display: flex;
     align-items: center;
     gap: 32px;
 }
 
-#naviagtionTabs a{
+.nav-links-menu a{
     text-decoration: none;
     color: rgb(84, 84, 84);
 }
 
-#naviagtionTabs a:hover{
+.nav-links-menu a:hover{
     color: #4f39f6;
 }
 
-#barmenu{
+.mobile-menu-toggle{
     display: none;
 }
 
-#actionButtons a:first-child{
+.auth-buttons-group a:first-child{
     margin-right: 8px;
     padding: 8px 16px;
     height: 36px;
@@ -85,22 +91,16 @@ header{
     font-weight: 500;
     line-height: 20px;
     text-decoration: none;
+    border-radius: 10px;
+    width: 36px;
 }
 
-#actionButtons a:first-child:hover{
-    border-radius: 10px;
+.auth-buttons-group a:first-child:hover{
     color: white;
     background-color: #4f39f6;
-    font-weight: 600;
 }
 
-#actionButtons a:first-child:hover + a:last-child{
-    color: #101828;
-    background-color: white;
-    font-weight: 600;
-}
-
-#actionButtons a:last-child{
+.auth-buttons-group a:last-child{
     padding: 8px 16px;
     height: 36px;
     border-radius: 10px;
@@ -112,9 +112,10 @@ header{
     font-weight: 500;
     line-height: 20px;
     text-decoration: none;
+    width: 36px;
 }
 
-#actionButtons a:last-child:hover{
+.auth-buttons-group a:last-child:hover{
     background-color: #1a0d7a;
 }
 
@@ -124,15 +125,14 @@ hr {
   background-color: #E5E7EB;
 }
 
-#landingSectionContainer{
-    max-width: 1440px;
+.hero-section-wrapper{
     background-color: #f9f9fd;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#LandingSection{
+#Hero-section{
     padding: 6rem 2rem;
     gap: 64px;
     width: 1200px;
@@ -141,11 +141,11 @@ hr {
     justify-content: center;
 }
 
-#landingSectionLeftPart{
+.hero-content-left{
     flex: 1;
 }
 
-#landingSectionLeftPart div:nth-child(1){
+.hero-content-left div:nth-child(1){
     width: max-content;
     display: flex;
     align-items: center;
@@ -158,56 +158,62 @@ hr {
     background-color: white;
     box-shadow: 0 4px 6px -1px #eaeaea, 0 2px 4px -1px #eaeaea;
 }
-#landingSectionLeftPart div:nth-child(1) i{
+.hero-content-left div:nth-child(1) i{
     font-size: 6px;
     margin-right: 10px;
 }
 
-#landingSectionLeftPart div:nth-child(2){
-    font-size: 28px;
-    padding: 12px 0;
+.hero-content-left div:nth-child(2){
+    font-size: 52px;
+    color: #101828;
+    padding: 20px 0;
+    font-weight: 800;
+    line-height: 61.6px;
+    letter-spacing: -1.4px;
 }
 
-#landingSectionLeftPart div:nth-child(2) span{
+.hero-content-left div:nth-child(2) span{
     color: #4f39f6;
 }
 
-#landingSectionLeftPart div:nth-child(3){
+.hero-content-left div:nth-child(3){
     color: rgb(113, 113, 113);
     font-size: 18px;
     line-height: 1.6;
     margin-bottom: 2rem;
 }
 
-#landingSectionLeftPart div:nth-child(4){
+.hero-content-left div:nth-child(4){
     margin-bottom: 1rem;
 }
 
-#landingSectionLeftPart div:nth-child(4) button:first-child{
+.hero-content-left div:nth-child(4) button:first-child{
     padding: 8px 12px;
     border-radius: 8px;
     color: white;
     background-color: #4f39f6;
     border: none;
     margin-right: 5px;
+    cursor: pointer;
 }
 
-#landingSectionLeftPart div:nth-child(4) button:first-child i{
+.hero-content-left div:nth-child(4) button:first-child i{
     margin-left: 10px;
     margin-right: 5px;
     font-size: 13px;
 }
 
-#landingSectionLeftPart div:nth-child(4) button:last-child{
+.hero-content-left div:nth-child(4) button:last-child{
     padding: 8px 12px;
     color: black;
     background-color: white;
     border: solid 2px #e2e3e7;
     border-radius: 8px;
     font-weight: 500;
+    cursor: pointer;
 }
 
-#landingSectionLeftPart div:nth-child(4) button:last-child:hover{
+.hero-content-left div:nth-child(4) button:last-child:hover{
     border-radius: 8px;
     color: white;
     background-color: #4f39f6;
@@ -215,14 +221,14 @@ hr {
     font-weight: 400;
 }
 
-#landingSectionLeftPart div:nth-child(4) button:last-child:hover i { 
+.hero-content-left div:nth-child(4) button:last-child:hover i { 
     color: #ffffff;
     -webkit-text-stroke: 1px #ffffff; 
 }
 
 
 
-#landingSectionLeftPart div:nth-child(4):has(button:last-child:hover) button:first-child {
+.hero-content-left div:nth-child(4):has(button:last-child:hover) button:first-child {
     color: black;
     background-color: white;
     border: solid 2px #e2e3e7;
@@ -230,7 +236,7 @@ hr {
     font-weight: 500;
 }
 
-#landingSectionLeftPart div:nth-child(4) button:last-child i{
+.hero-content-left div:nth-child(4) button:last-child i{
     color: transparent; 
     -webkit-text-stroke: 1px #000000; 
     margin-left: 5px;
@@ -238,27 +244,24 @@ hr {
     font-size: 13px;
 }
 
-#landingSectionLeftPart div:nth-child(5){
+.hero-content-left div:nth-child(5){
     color: rgb(113, 113, 113);
     font-size: 13px;
     margin-top: 1rem;
 }
-#landingSectionLeftPart div:nth-child(5) i{
+.hero-content-left div:nth-child(5) i{
     font-size: 2px;
 }
-#landingSectionRightPart{
+.hero-image-right{
     flex: 1;
 }
 
-
-/* Teams section */
-#TeamsSectionContainer{
-    max-width: 1440px;
+.trusted-teams-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-#TeamsSection{
+.trusted-teams-content{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,16 +272,16 @@ hr {
     padding: 3rem 2rem;
 }
 
-#TeamsSection div{
+.trusted-teams-content div{
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     gap: 80px;
     align-self: stretch;
     padding: 2rem 0 0 0;
 }
 
-#TeamsSection div div{
+.trusted-teams-content div p{
     flex: 1;
     box-sizing: border-box; 
     font-size: 18px;
@@ -286,14 +289,7 @@ hr {
     color: rgb(185, 185, 185);
 }
 
-.PageContainer{
-    display: flex;
-    padding: 6rem 4rem;
-    flex-direction: column;
-    align-items: center;
-}
-
-.pageHeading{
+.section-subtitle{
     color: #4F39F6;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -305,7 +301,7 @@ hr {
     text-transform: uppercase;
 }
 
-.pageLine{
+.section-main-title{
     color: #101828;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -316,7 +312,7 @@ hr {
     letter-spacing: -0.95px;
 }
 
-.page2ndline{
+.section-description-text{
     color: #4A5565;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -326,12 +322,12 @@ hr {
     line-height: 27.625px;
 }
 
-.PagePaddingWidth{
+.padded-content-area{
     padding: 6rem 2rem;
     width: 1200px;
 }
 
-#Features div{
+.features-grid-layout{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
@@ -339,7 +335,7 @@ hr {
     box-sizing: border-box;
 }
 
-#Features div div{
+.feature-card-item{
     display: flex;
     flex-direction: column;
     border-radius: 14px;
@@ -350,38 +346,51 @@ hr {
     text-align: left;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
-}
-#Features div div i{
-    font-size: 20px;
-    color: #4f39f6;
-    background-color: #eef2ff;
-    width: max-content;
-    padding: 12px;
-    border-radius: 12px;
+    gap: 16px;
 }
 
-#Features div div p:nth-child(2){
-    margin-top: 10px;
+.feature-icon-wrapper{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    padding: 12px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px;
+    background: #EEF2FF;
+}
+
+
+.feature-icon-wrapper svg{
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.feature-card-title{
     color: #101828;
     font-size: 18px;
+    font-style: normal;
     font-weight: 500;
-    margin-bottom: 0;
+    line-height: 27px;
 }
 
-#Features div div p{
+.feature-card-text{
+    color: #4A5565;
     font-size: 15px;
+    font-style: normal;
     font-weight: 400;
+    line-height: 24.375px;
 }
 
-/* WHY section */
-#WhySection{
+#Tool-comparison-section{
     width:900px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.table {
+.comparison-table-wrapper {
     background-color: #ffffff;
     overflow: hidden;
     width: 75%;
@@ -391,7 +400,7 @@ hr {
     box-shadow: 0 4px 12px -2px rgba(17, 24, 39, 0.10), 0 2px 6px -2px rgba(17, 24, 39, 0.06);
 }
 
-.comparison-table {
+.competitor-comparison-table {
     width: 100%;
     border-collapse: collapse;
 }
@@ -401,22 +410,22 @@ hr {
 .col-email { width: 15%; }
 .col-nimbus {width: 15%;}
 
-.comparison-table th,
-.comparison-table td {
+.competitor-comparison-table th,
+.competitor-comparison-table td {
     padding: 15px 20px;
     text-align: center;
     border-bottom: 1px solid #f7f7f7;
 }
 
-.comparison-table tbody tr:last-child td {
+.competitor-comparison-table tbody tr:last-child td {
     border-bottom: none;
 }
 
-.comparison-table .align-left{
+.competitor-comparison-table .align-left{
     text-align: left;
 }
 
-.comparison-table th {
+.competitor-comparison-table th {
     font-weight: 600;
     color: #6b7280;
     font-size: 15px;
@@ -424,66 +433,70 @@ hr {
     padding-bottom: 15px;
 }
 
-.comparison-table th.align-left {
+.competitor-comparison-table th.align-left {
     color: #1f2937;
     font-size: 16px;
 }
 
-.comparison-table td.align-left {
+.competitor-comparison-table td.align-left {
     color: #6a6a6a;
     font-size: 15px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.comparison-table .nimbus-header {
+.competitor-comparison-table .nimbus-header {
     background-color: #5741ff;
     color: #ffffff;
     font-size: 16px;
 }
 
-.icon-check {
+.status-icon-available {
     color: #5741ff;
     font-weight: bold;
     font-size: 18px;
 }
 
-.icon-cross {
+.status-icon-unavailable {
     color: rgb(225, 219, 219);;
     font-weight: bold;
     font-size: 16px;
 }
 
-.greyrow{
+.table-row-highlight{
     background-color: #F9FAFB;
 }
 
-.purplecell{
+.highlighted-table-cell{
     background-color: #eef2ff;
 }
 
-#SurveySection{
+.statistics-section-wrapper{
+    background-color: #4f39f6;
+}
+
+.statistics-metrics-grid{
     display: flex;
     justify-content: center;
     color: rgb(156, 156, 156);
-    background-color: #4f39f6;
-    padding: 4rem 10rem;
+    padding: 4rem 2rem;
+    width: 1200px;
     gap: 32px;
 }
 
-#SurveySection div{
+.statistics-metrics-grid div{
     flex: 1;
     text-align: center;
 }
 
-#SurveySection div p:nth-child(1){
+.statistics-metrics-grid div p:nth-child(1){
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
     color: white;
     font-weight: 700;
 }
 
-#SurveySection div p:last-child{
+.statistics-metrics-grid div p:last-child{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: #C6D2FF;
@@ -491,7 +504,7 @@ hr {
 }
 
 
-#alltestimonials{
+.reviews-grid-container{
     display: flex;
     padding-right: 0.008px;
     padding-top: 3.5rem;
@@ -500,7 +513,7 @@ hr {
     gap: 24px;
     align-self: stretch;
 }
-.CompleteTestimonial{
+.review-card-item{
     display: flex;
     width: 362.664px;
     padding: 28px;
@@ -512,12 +525,12 @@ hr {
     gap: 24px;
 }
 
-#Features div div svg{
+#Core-features-section div div svg{
     width: 28px;
     height: 28px;
 }
 
-#Testinomials div div p{
+#User-reviews-section div div p{
     color: #364153;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
@@ -526,32 +539,32 @@ hr {
     line-height: 26px;
 }
 
-.Imagebanner{
+.reviewer-avatar{
     width: 44px;
     height: 44px;
     flex-shrink: 0;
     border-radius: 50%;
 }
 
-.Imagebanner3{
-    background: url(../assets/Image\ \(Mia\ Chen\).png) lightgray 50% / cover no-repeat;
+.reviewer-avatar-mia{
+    background: url(../assets/mia-chen.png) lightgray 50% / cover no-repeat;
 }
 
-.Imagebanner2{
-    background: url(../assets/Image\ \(Daniel\ Okafor\).png) lightgray 50% / cover no-repeat;
+.reviewer-avatar-daniel{
+    background: url(../assets/daniel-okafor.png) lightgray 50% / cover no-repeat;
 }
 
-.Imagebanner1{
-    background: url(../assets/Image\ \(Sofia\ Reyes\).png) lightgray 50% / cover no-repeat;
+.reviewer-avatar-sofia{
+    background: url(../assets/sofia-reyes.png) lightgray 50% / cover no-repeat;
 }
 
-.TestimonialsInfo{
+.reviewer-profile-info{
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
-.TestimonialsInfo p:first-child{
+.reviewer-profile-info p:first-child{
     color: #101828;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
@@ -560,7 +573,7 @@ hr {
     line-height: 22.5px;
 }
 
-.TestimonialsInfo p:last-child{
+.reviewer-profile-info p:last-child{
     color: #6A7282;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
@@ -569,24 +582,24 @@ hr {
     line-height: 20px; 
 }   
 
-.TestimonialsInfo div{
+.reviewer-profile-info div{
     display: flex;
     flex-direction: column;
 }
 
-#PricingContainer{
+.pricing-cards-container{
     display: flex;
     padding-top: 64px;
     flex-direction: column;
     align-items: center;
 }
 
-#innerPricingContainer{
+.pricing-cards-grid{
     display: flex;
     gap: 24px;
 }
 
-.PricingPack{
+.subscription-tier-card{
     display: flex;
     width: 320px;
     padding: 28px;
@@ -599,7 +612,7 @@ hr {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.PricingPack h3{
+.subscription-tier-card h3{
     color: #101828;
     font-size: 18px;
     font-style: normal;
@@ -607,7 +620,7 @@ hr {
     line-height: 27px;
 }
 
-.pricepacktagline{
+.subscription-tier-subtitle{
     color: #6A7282;
     font-size: 15px;
     font-style: normal;
@@ -615,14 +628,14 @@ hr {
     line-height: 22.5px;
 }
 
-.PricingPack div{
+.subscription-tier-card div{
     display: flex;
     align-items: flex-end;
     gap: 4px;
     align-self: stretch;
 }
 
-.PricingPack div p:first-child{
+.subscription-tier-card div p:first-child{
     color: #101828;
     font-size: 40px;
     font-style: normal;
@@ -630,7 +643,7 @@ hr {
     line-height: 40px;
 }
 
-.PricingPack div p:last-child{
+.subscription-tier-card div p:last-child{
     color: #6A7282;
     font-size: 15px;
     font-style: normal;
@@ -638,7 +651,7 @@ hr {
     line-height: 22.5px;
 }
 
-.PricingPack .pricebutton{
+.subscription-tier-card .subscribe-action-button{
     display: flex;
     height: 40px;
     padding: 0 24px;
@@ -648,21 +661,22 @@ hr {
     border-radius: 8px;
     border: 1px solid #E5E7EB;
     background: #FFF;
+    cursor: pointer;
 }
 
-.PricingPack .List{
+.subscription-tier-card .tier-features-list{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     align-self: stretch;
 }
 
-.PricingPack .List div{
+.subscription-tier-card .tier-features-list div{
     display: flex;
     align-items: center;
 }
 
-.PricingPack .List p{
+.subscription-tier-card .tier-features-list p{
     color: #4A5565;
     font-size: 15px;
     font-style: normal;
@@ -670,7 +684,7 @@ hr {
     line-height: 22.5px;
 }
 
-#PopularPricingPack{
+.highlighted-tier-card{
     display: flex;
     position: relative;
     padding: 28px;
@@ -682,7 +696,7 @@ hr {
     box-shadow: 0 0 0 1px #4F39F6, 0 18px 40px -12px rgba(49, 46, 129, 0.25);
 }
 
-#Popularpricebutton{
+.primary-subscribe-button{
     display: flex;
     padding: 0 24px;
     height: 40px;
@@ -692,22 +706,23 @@ hr {
     border-radius: 8px;
     background: #4F46E5;
     color: white;
+    cursor: pointer;
 }
 
-#PopularPricingPack #PopularBanner{
+.highlighted-tier-card .most-popular-badge{
     display: flex;
     padding: 4px 12px;
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    right: 75px;
+    right: 119.004px;
     top: -11px;
     border-radius: 16777200px;
     background: #4F39F6;
     box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.10), 0 1px 2px -1px rgba(0, 0, 0, 0.10);
 }
 
-#featurelink{
+.compare-features-link-wrapper{
     display: flex;
     padding-top: 40px;
     flex-direction: column;
@@ -715,7 +730,7 @@ hr {
     align-self: stretch;
 }
 
-#featurelink p{
+.compare-features-link-wrapper p{
     color: #4F46E5;
     text-align: center;
     font-family: Inter;
@@ -723,9 +738,10 @@ hr {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+    cursor: pointer;
 }
 
-#innerfeaturelink{
+.compare-features-link-inner{
     display: flex;
     height: 36px;
     justify-content: center;
@@ -733,7 +749,7 @@ hr {
     align-self: stretch;
 }
 
-#NimbusContainer{
+.gallery-images-container{
     display: flex;
     padding-top: 56px;
     flex-direction: column;
@@ -741,38 +757,63 @@ hr {
     align-self: stretch;
 }
 
-#innerNimbusContainer{
-    display: flex;
+.gallery-images-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
     height: 376px;
     justify-content: center;
     align-items: flex-start;
-    gap: 16px;
     align-self: stretch;
+    box-sizing: border-box;
 }
 
-.CornerImages{
+.gallery-grid-tall-column{
     height: 374px;
-    flex-shrink: 0;
-    align-self: stretch;
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
 }
 
-.middleImage{
-    height: 178px;
-    flex-shrink: 0;
-    align-self: stretch;
+.gallery-image-collaborating{
+    background: url(/assets/team-collaborating-in-an-office.png) lightgray 50% / cover no-repeat;
 }
 
-.greyPage{
+.gallery-image-team{
+    background: url(/assets/creative-team-meeting.png) lightgray 50% / cover no-repeat;
+}
+
+.gallery-grid-split-column{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 16px;
+    height: 376px;
+    justify-content: center;
+    justify-items: stretch;
+    box-sizing: border-box;
+}
+
+.gallery-image-laptops{
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    background: url(/assets/group-working-on-laptops.png) lightgray 50% / cover no-repeat;
+}
+.gallery-image-planning{
+    border-radius: 16px;
+    border: 1px solid #E5E7EB;
+    background: url(/assets/colleagues-around-a-table.png) lightgray 50% / cover no-repeat;
+}
+
+.background-light-grey{
     background-color: #F9FAFB;
 }
 
-#FAQ{
+#Faq-accordion-section{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#FAQcontainer{
+.faq-accordion-container{
     display: flex;
     width: 696px;
     height: 324px;
@@ -782,21 +823,42 @@ hr {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.Faqs{
+.faq-accordion-item {
     display: flex;
     align-items: flex-start;
     align-self: stretch;
-    justify-content: space-between;
     border-bottom: 1px solid #E5E7EB;
     padding: 16px 0;
     color: #101828;
     font-size: 16px;
-    font-style: normal;
     font-weight: 500;
     line-height: 24px;
 }
 
-#ReadytogetTeam{
+.faq-accordion-item details{
+    width: 100%;
+}
+
+.faq-accordion-item summary{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.faq-accordion-item summary::-webkit-details-marker {
+    display: none;
+}
+.faq-accordion-item details[open] summary svg {
+    transform: rotate(180deg);
+}
+.faq-accordion-item .faq-answer-text {
+    margin-top: 12px;
+    color: #4B5563;
+    font-weight: 400;
+}
+
+.call-to-action-content{
     display: flex;
     padding: 5rem 2rem;
     width: 1200px;
@@ -804,7 +866,7 @@ hr {
     align-items: flex-start;
 }
 
-#getteamcontainer{
+.cta-banner-container{
     height: 317px;
     align-self: stretch;
     border-radius: 24px;
@@ -813,7 +875,7 @@ hr {
     position: relative;
 }
 
-#upperBubble{
+.cta-background-decoration-top{
     width: 256px;
     height: 256px;
     border-radius: 16777200px;
@@ -823,7 +885,7 @@ hr {
     left: 970px;
 }
 
-#lowerBubble{
+.cta-background-decoration-bottom{
     width: 224px;
     height: 224px;
     border-radius: 16777200px;
@@ -833,7 +895,7 @@ hr {
     left: -40px;
 }
 
-#innergetteamcontainer{
+.cta-content-inner{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -841,14 +903,14 @@ hr {
     top: 4rem;
 }
 
-.getteamheadingcontainer{
+.cta-title-wrapper{
     display: flex;
     flex-direction: column;
     align-items: center;
     align-self: stretch;
 }
 
-.getteamheadingcontainer p{
+.cta-title-wrapper p{
     color: #FFF;
     text-align: center;
     font-family: Inter;
@@ -859,7 +921,7 @@ hr {
     letter-spacing: -1px;
 }
 
-.getteamparagraphcontainer{
+.cta-description-wrapper{
     display: flex;
     padding-top: 1rem;
     flex-direction: column;
@@ -867,7 +929,7 @@ hr {
     align-self: stretch;
 }
 
-.getteamparagraphcontainer p{
+.cta-description-wrapper p{
     color: #E0E7FF;
     text-align: center;
     font-size: 17px;
@@ -877,7 +939,7 @@ hr {
     width: 400px;
 }
 
-.getteambuttonscontainer{
+.cta-action-buttons{
     display: flex;
     height: 40px;
     justify-content: center;
@@ -887,7 +949,7 @@ hr {
     margin-top: 2rem;
 }
 
-.getteambuttonscontainer button:first-child{
+.cta-action-buttons button:first-child{
     display: flex;
     align-items: center;
     color: #3730A3;
@@ -900,9 +962,10 @@ hr {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+    cursor: pointer;
 }
 
-.getteambuttonscontainer button:last-child{
+.cta-action-buttons button:last-child{
     display: flex;
     align-items: center;
     color: #ffffff;
@@ -915,6 +978,7 @@ hr {
     font-style: normal;
     font-weight: 500;
     line-height: 20px;
+    cursor: pointer;
 }
 
 footer{
@@ -922,7 +986,7 @@ footer{
     padding: 4rem 2rem;
 }
 
-#footerlinkscontainer{
+.footer-navigation-grid{
     display: flex;
     height: 208px;
     justify-content: center;
@@ -931,16 +995,15 @@ footer{
     align-self: stretch;
 }
 
-.linkcontainer{
+.footer-nav-column{
     display: flex;
     flex: 1;
-    /* width: 345.039px; */
     max-width: 384px;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.footerlinkHead{
+.footer-brand-logo{
     display: flex;
     padding-right: 236.039px;
     align-items: center;
@@ -949,7 +1012,7 @@ footer{
     color: #101828;
 }
 
-.footerlinkHead i{
+.footer-brand-logo i{
     color: white;
     font-size: 10px;
     background-color: #4f39f6;
@@ -959,12 +1022,12 @@ footer{
     margin-right: 6px;
 }
 
-.footerlinkHead p{
+.footer-brand-logo p{
     font-weight: 700;
     cursor: pointer;
 }
 
-#footerintro{
+.footer-brand-description{
     color: #6A7282;
     font-size: 15px;
     font-style: normal;
@@ -973,7 +1036,7 @@ footer{
     padding-top: 16px;
 }
 
-.linkcontainer form{
+.footer-nav-column form{
     display: flex;
     align-items: flex-start;
     gap: 8px;
@@ -982,7 +1045,7 @@ footer{
     align-items: center;
 }
 
-.linkcontainer form input{
+.footer-nav-column form input{
     height: 32px;
     padding: 4px 12px;
     border-radius: 8px;
@@ -990,7 +1053,7 @@ footer{
     background: #FFF;
 }
 
-.linkcontainer form button{
+.footer-nav-column form button{
     height: 40px;
     padding: 4px 12px;
     border-radius: 8px;
@@ -1000,7 +1063,7 @@ footer{
     cursor: pointer;
 }
 
-.linkcontainer h4{
+.footer-nav-column h4{
     color: #101828;
     font-size: 16px;
     font-style: normal;
@@ -1008,13 +1071,13 @@ footer{
     line-height: 24px;
 }
 
-.linkcontainer ul{
+.footer-nav-column ul{
     list-style-type: none;
     padding: 0;
     padding-top: 16px;
 }
 
-.linkcontainer ul li{
+.footer-nav-column ul li{
     color: #6A7282;
     font-size: 15px;
     font-style: normal;
@@ -1024,11 +1087,11 @@ footer{
     cursor: pointer;
 }
 
-#footerprofilelinks{
+.footer-bottom-bar{
     margin-top:3rem;
 }
 
-#innerFooterprofilelinks{
+.footer-copyright-and-socials{
     display: flex;
     padding-top: 32px;
     justify-content: space-between;
@@ -1036,7 +1099,7 @@ footer{
     align-self: stretch;
 }
 
-#innerFooterprofilelinks p{
+.footer-copyright-and-socials p{
     color: #6A7282;
     font-size: 14px;
     font-style: normal;
@@ -1044,27 +1107,355 @@ footer{
     line-height: 20px;
 }
 
-#profileIcons{
+.social-media-links{
     display: flex;
     align-items: center;
     gap: 8px;
 }
 
-#profileIcons .icon{
+.social-media-links .social-media-icon{
     display: flex;
     width: 36px;
     height: 36px;
     padding: 9px;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
-#profileIcons .icon svg{
+.social-media-links .social-media-icon svg{
     width: 18px;
     height: 18px;
     flex-shrink: 0;
 }
 
-.linkcontainer ul li:hover{
+.footer-nav-column ul li:hover{
     color: #4f39f6;
+}
+
+
+@media (max-width: 1024px) {
+    .main-navigation {
+        padding: 0 2rem;
+        height: 48px;
+        width: 990px;
+    }
+    #Hero-section {
+        padding: 3.5rem 1.5rem;
+        height: auto;
+        width: 990px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .hero-content-left div:nth-child(1),
+    .hero-content-left div:nth-child(4) {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-image-right {
+        width: 70%;
+    }
+    .hero-image-right img {
+        width: 100%;
+    }
+    .trusted-teams-content {
+        padding: 2rem 1.5rem;
+        width: 990px;
+    }
+    .trusted-teams-content div {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    .trusted-teams-content div p{
+        padding: 15px 15px;
+    }
+    .padded-content-area{
+        padding: 4rem 1.5rem;
+        width: 950px;
+    }
+    .feature-card-item{
+        width: 300px; 
+    }
+    .comparison-table-wrapper {
+        width: 75%;
+        overflow-x: auto;
+    }
+    .statistics-metrics-grid {
+        padding: 4rem 1.5rem;
+        flex-wrap: wrap;
+        width: 950px;
+    }
+    .pricing-cards-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .subscription-tier-card{
+        width: 220px;
+    }
+    .CornerImages, .middleImage {
+        width: 45%;
+        height: auto;
+        object-fit: cover;
+    }
+    .call-to-action-content {
+        padding: 4rem 1.5rem;
+        width: 950px;
+    }
+    .cta-background-decoration-top{
+        width: 200px;
+        height: 200px;
+        left: 780px;
+        top: -50px;
+        right: 0;
+    }
+    .cta-background-decoration-bottom{
+        width: 180px;
+        height: 180px;
+        top: 173px;
+        left: -30px;
+    }
+    footer {
+        padding: 4rem 1.5rem;
+        width: 950px;
+    }
+    .footer-navigation-grid {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-navigation {
+        padding: 0 1rem;
+        height: 42px;
+        width: 700px;
+    }
+    .mobile-menu-toggle{
+        display: block;
+    }
+    .nav-links-menu{
+        display: none;
+    }
+    .auth-buttons-group{
+        display: none;
+    }
+    #Hero-section {
+        padding: 2rem 1rem;
+        width: 700px;
+    }
+    .hero-content-left div:nth-child(3) pre {
+        white-space: pre-wrap;
+        font-size: 16px;
+    }
+    .trusted-teams-content {
+        padding: 1.5rem 1rem;
+        width: 700px;
+    }
+    .trusted-teams-content div{
+        gap:0px
+    }
+    .padded-content-area{
+        padding: 3rem 1.5rem;
+        width: 700px;
+    }
+    .features-grid-layout{
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .feature-card-item{
+        width: 340px; 
+    }
+    #Tool-comparison-section{
+        width: 600px;
+    }
+    .comparison-table-wrapper {
+        width: 100%;
+        display: block;
+    }
+    .statistics-metrics-grid {
+        padding: 3rem 1.5rem;
+        width: 700px;
+    }
+    .reviews-grid-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .review-card-item {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .highlighted-tier-card .most-popular-badge {
+        right: 20px;
+    }
+    .subscription-tier-card {
+        width: 300px;
+        box-sizing: border-box;
+    }
+    .gallery-images-grid{
+        grid-template-columns: repeat(2, 1fr);
+        height: 730px;
+    }
+    .gallery-grid-split-column{
+        grid-template-rows: repeat(1, 1fr);
+    }
+    .gallery-image-laptops,.gallery-image-planning{
+        height: 376px;
+    }
+    .CornerImages, .middleImage {
+        width: 100%;
+    }
+    .faq-accordion-container {
+        width: 100%;
+        height: auto;
+    }
+    .cta-banner-container {
+        height: auto;
+        padding: 2rem 0;
+        overflow: hidden;
+    }
+    .cta-content-inner {
+        top: 0;
+        padding: 0 1rem;
+    }
+    .cta-description-wrapper p {
+        width: 100%;
+    }
+    .cta-action-buttons {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+    .call-to-action-content {
+        padding: 3rem 1.5rem;
+        width: 700px;
+    }
+    .cta-background-decoration-top{
+        width: 150px;
+        height: 150px;
+        left: 580px;
+        top: -35px;
+        right: 0;
+    }
+    .cta-background-decoration-bottom{
+        width: 150px;
+        height: 150px;
+        top: 150px;
+        left: -40px;
+    }
+    footer {
+        padding: 3rem 1.5rem 1rem 1.5rem;
+        width: 700px;
+    }
+    .footer-brand-logo {
+        padding-right: 0;
+    }
+    .footer-nav-column form {
+        display: none;
+    }
+    .footer-bottom-bar{
+        margin-top:2rem;
+    }
+    .footer-copyright-and-socials {
+        padding-top:1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-navigation {
+        height: 36px;
+        width: 350px;
+    }
+    #Hero-section {
+        padding: 1.5rem 0.5rem;
+        width: 350px;
+    }
+    .hero-image-right{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .trusted-teams-content div{
+        gap:20px
+    }
+    .sectionContainer {
+        padding: 2rem 1rem;
+    }
+    .padded-content-area{
+        padding: 2rem 1rem;
+        width: 360px;
+    }
+    .trusted-teams-content {
+        padding: 1.5rem 1rem;
+        width: 350px;
+    }
+    .features-grid-layout{
+        grid-template-columns: 1fr;
+    } 
+    .feature-card-item{
+        width: auto;
+    }
+    #Tool-comparison-section{
+        width: 350px;
+    }
+    .statistics-metrics-grid {
+        padding: 1.5rem 1rem;
+        gap: 12px;
+        width: 360px;
+    }
+    .statistics-metrics-grid div p:nth-child(1){
+        font-size: 24px;
+    }
+    .statistics-metrics-grid div p:nth-child(2){
+        font-size: 9px;
+    }
+    .competitor-comparison-table th,
+    .competitor-comparison-table td {
+        padding: 12px 10px;
+    }
+    .gallery-images-grid{
+        grid-template-columns: repeat(1, 1fr);
+        height: 1230px;
+    }
+    .gallery-grid-split-column{
+        grid-template-rows: repeat(1, 1fr);
+        height: 178px;
+    }
+    .gallery-image-laptops,.gallery-image-planning{
+        height: 176px;
+    }
+    .call-to-action-content {
+        padding: 2rem 1rem;
+        width: 350px;
+    }
+    .cta-background-decoration-top{
+        width: 100px;
+        height: 100px;
+        left: 280px;
+        top: -40px;
+        right: 0;
+    }
+    .cta-background-decoration-bottom{
+        width: 100px;
+        height: 100px;
+        top: 280px;
+        left: -30px;
+    }
+    footer {
+        padding: 2rem 1rem 1rem 1rem;
+        width: 350px;
+    }
+    .footer-navigation-grid {
+        flex-wrap: wrap;
+        height: auto;
+        gap: 2rem 5rem;
+    }
+    .social-media-links .social-media-icon{
+        width: 18px;
+        height: 18px;
+        padding: 0;
+    }
 }
