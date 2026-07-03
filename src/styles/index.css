@@ -522,6 +522,7 @@ hr {
     background: #FFF;
     flex-direction: column;
     align-items: flex-start;
+    align-self: stretch;
     gap: 24px;
 }
 
@@ -533,7 +534,7 @@ hr {
 #User-reviews-section div div p{
     color: #364153;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 18px;
     font-style: normal;
     font-weight: 400;
     line-height: 26px;
@@ -547,15 +548,15 @@ hr {
 }
 
 .reviewer-avatar-mia{
-    background: url(../assets/mia-chen.png) lightgray 50% / cover no-repeat;
+    background: url(src/assets/mia-chen.png) lightgray 50% / cover no-repeat;
 }
 
 .reviewer-avatar-daniel{
-    background: url(../assets/daniel-okafor.png) lightgray 50% / cover no-repeat;
+    background: url(src/assets/daniel-okafor.png) lightgray 50% / cover no-repeat;
 }
 
 .reviewer-avatar-sofia{
-    background: url(../assets/sofia-reyes.png) lightgray 50% / cover no-repeat;
+    background: url(src/assets/sofia-reyes.png) lightgray 50% / cover no-repeat;
 }
 
 .reviewer-profile-info{
@@ -775,11 +776,11 @@ hr {
 }
 
 .gallery-image-collaborating{
-    background: url(/assets/team-collaborating-in-an-office.png) lightgray 50% / cover no-repeat;
+    background: url(/src/assets/team-collaborating-in-an-office.png) lightgray 50% / cover no-repeat;
 }
 
 .gallery-image-team{
-    background: url(/assets/creative-team-meeting.png) lightgray 50% / cover no-repeat;
+    background: url(/src/assets/creative-team-meeting.png) lightgray 50% / cover no-repeat;
 }
 
 .gallery-grid-split-column{
@@ -795,12 +796,12 @@ hr {
 .gallery-image-laptops{
     border-radius: 16px;
     border: 1px solid #E5E7EB;
-    background: url(/assets/group-working-on-laptops.png) lightgray 50% / cover no-repeat;
+    background: url(/src/assets/group-working-on-laptops.png) lightgray 50% / cover no-repeat;
 }
 .gallery-image-planning{
     border-radius: 16px;
     border: 1px solid #E5E7EB;
-    background: url(/assets/colleagues-around-a-table.png) lightgray 50% / cover no-repeat;
+    background: url(/src/assets/colleagues-around-a-table.png) lightgray 50% / cover no-repeat;
 }
 
 .background-light-grey{
