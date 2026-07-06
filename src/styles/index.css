@@ -730,8 +730,8 @@ hr {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
-    right: 119.004px;
-    top: -11px;
+    right: 129px;
+    top: -13.5px;
     border-radius: 16777200px;
     color: white;
     background: #4F39F6;
@@ -1228,6 +1228,9 @@ footer{
         padding: 64px 24px;
         width: 950px;
     }
+    .highlighted-tier-card .most-popular-badge {
+        right: 78px;
+    }
     .cta-background-decoration-top{
         width: 200px;
         height: 200px;
@@ -1312,7 +1315,7 @@ footer{
         box-sizing: border-box;
     }
     .highlighted-tier-card .most-popular-badge {
-        right: 20px;
+        right: 89px;
     }
     .subscription-tier-card {
         width: 300px;
@@ -1348,10 +1351,7 @@ footer{
     .cta-description-wrapper p {
         width: 100%;
     }
-    .cta-action-buttons {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
+    .cta-action-buttons{
         gap: 16px;
         margin-top: 16px;
     }
@@ -1369,7 +1369,7 @@ footer{
     .cta-background-decoration-bottom{
         width: 150px;
         height: 150px;
-        top: 150px;
+        top: 120px;
         left: -40px;
     }
     .cta-action-buttons button{
@@ -1401,6 +1401,9 @@ footer{
     #hero-section {
         padding: 24px 8px;
         width: 350px;
+    }
+    .hero-content-left div:nth-child(2){
+        font-size: 44px;
     }
     .hero-image-right{
         width: 100%;
@@ -1476,7 +1479,7 @@ footer{
     .cta-background-decoration-bottom{
         width: 100px;
         height: 100px;
-        top: 280px;
+        top: 210px;
         left: -30px;
     }
     footer {
