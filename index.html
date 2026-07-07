@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimbus</title>
+    <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://googleapis.com" rel="stylesheet">
+</head>
+<body>
+    <header class="page-container">
+        <nav class="main-navigation">
+            <a href="index.html" class="brand-logo-link">
+                <div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                        <path d="M2.70038 9.11613C1.93451 9.03925 1.2275 8.67095 0.725574 8.08739C0.223653 7.50384 -0.0347688 6.74969 0.00376492 5.98094C0.0422987 5.21219 0.374839 4.48767 0.9326 3.95723C1.49036 3.42679 2.23066 3.13103 3.00038 3.13113C3.23303 2.19397 3.78708 1.36813 4.566 0.797468C5.34493 0.226803 6.29937 -0.0525207 7.26307 0.00815629C8.22676 0.0688333 9.13863 0.465665 9.83983 1.12952C10.541 1.79338 10.9871 2.68219 11.1004 3.64113C11.6855 3.86219 12.1817 4.26963 12.5124 4.8006C12.8431 5.33158 12.9899 5.95659 12.9302 6.57926C12.8705 7.20193 12.6075 7.78765 12.182 8.24611C11.7564 8.70457 11.1919 9.01029 10.5754 9.11613H2.70038Z" fill="white"/>
+                    </svg>
+                </div>
+                <p>Nimbus</p>
+            </a>
+
+            <div class="nav-links-menu">
+                <a href="#core-features-section">Feature</a>
+                <a href="#tool-comparison-section">How it works</a>
+                <a href="#pricing-plans-section">Pricing</a>
+                <a href="#user-reviews-section">Testimonials</a>
+                <a href="#faq-accordion-section">FAQs</a>
+            </div>
+            <div class="mobile-menu-toggle">
+                <svg xmlns="http://w3.org" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <line x1="3" y1="18" x2="21" y2="18" />
+                </svg>
+            </div>
+
+            <div class="auth-buttons-group">
+                <a href="#">Login</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </nav>
+    </header>
+    <hr>
+
+    <section class="hero-section-wrapper encenter-section">
+        <div id="hero-section">
+            <div class="hero-content-left">
+                <div>
+                    <span></span>
+                    <p>New: Timeline view is here</p>
+                </div>
+
+                <div>
+                    <p>Teamwork, finally <span>in sync</span></p>
+                </div>
+
+                <div><pre>Nimbus brings tasks, timelines, and teammates into
+one calm, focused workspace - so your team 
+always knows what's next.</pre></div>
+
+                <div>
+                    <button>Start for free 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3.33334 8H12.6667" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 3.33334L12.6667 8.00001L8 12.6667" stroke="white" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <button>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M4 2L13.3333 8L4 14V2Z" stroke="#111827" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg> Watch Demo</button>
+                </div>
+
+                <div><p>No credit card required. 14 day Pro trial</p></div>
+            </div>
+
+            <div class="hero-image-right">
+                <img src="src/assets/product-dashboard.png" alt="" width="100%">
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="trusted-teams-wrapper encenter-section">
+        <div class="trusted-teams-content">
+            <p>TRUSTED BY FAST MOVING TEAMS AT</p>
+            <div>
+                <p>Acme</p>
+                <p>Globex</p>
+                <p>Initech</p>
+                <p>Umbrella</p>
+                <p>Hooli</p>
+                <p>Stark</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <section class="core-features-wrapper encenter-section">
+        <section id="core-features-section" class="padded-content-area">
+            <p class="section-subtitle">Features</p>
+            <p class="section-main-title">Everything your team needs to ship</p>
+            <p class="section-description-text">Powerful, flexible, and refreshingly simple. Nimbus gives your team the tools to plan</p>
+            <p class="section-description-text">and deliver great work</p>
+            <div class="features-grid-layout">
+                <div class="feature-card-item">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M9 3H4C3.44772 3 3 3.44772 3 4V9C3 9.55228 3.44772 10 4 10H9C9.55228 10 10 9.55228 10 9V4C10 3.44772 9.55228 3 9 3Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 3H15C14.4477 3 14 3.44772 14 4V9C14 9.55228 14.4477 10 15 10H20C20.5523 10 21 9.55228 21 9V4C21 3.44772 20.5523 3 20 3Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M20 14H15C14.4477 14 14 14.4477 14 15V20C14 20.5523 14.4477 21 15 21H20C20.5523 21 21 20.5523 21 20V15C21 14.4477 20.5523 14 20 14Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 14H4C3.44772 14 3 14.4477 3 15V20C3 20.5523 3.44772 21 4 21H9C9.55228 21 10 20.5523 10 20V15C10 14.4477 9.55228 14 9 14Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="feature-card-title">Flexible boards</p>
+                    <p class="feature-card-text">Organize work your way with boards, lists, and timelines that adapt to any workflow.</p>
+                </div>
+                <div class="feature-card-item">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M8 2V6" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 2V6" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3 10H21" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="feature-card-title">Timeline planning</p>
+                    <p class="feature-card-text">Map out projects visually and spot bottlenecks before they slow your team down.</p>
+                </div>
+                <div class="feature-card-item">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M10.268 21C10.4435 21.304 10.696 21.5565 11 21.732C11.3041 21.9075 11.6489 21.9999 12 21.9999C12.3511 21.9999 12.6959 21.9075 13 21.732C13.304 21.5565 13.5565 21.304 13.732 21" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M3.262 15.326C3.13137 15.4692 3.04516 15.6472 3.01386 15.8385C2.98256 16.0298 3.00752 16.226 3.08571 16.4034C3.1639 16.5807 3.29194 16.7316 3.45426 16.8375C3.61658 16.9434 3.80618 16.9999 4 17H20C20.1938 17.0001 20.3834 16.9438 20.5459 16.8381C20.7083 16.7324 20.8365 16.5817 20.9149 16.4045C20.9933 16.2273 21.0185 16.0311 20.9874 15.8398C20.9564 15.6485 20.8704 15.4703 20.74 15.327C19.41 13.956 18 12.499 18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 12.499 4.589 13.956 3.262 15.326Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="feature-card-title">Smart reminders</p>
+                    <p class="feature-card-text">Stay ahead with notifications that surface what matters, exactly when it matters.</p>
+                </div>
+                <div class="feature-card-item">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H6C4.93913 15 3.92172 15.4214 3.17157 16.1716C2.42143 16.9217 2 17.9391 2 19V21" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 21V19C21.9993 18.1137 21.7044 17.2528 21.1614 16.5523C20.6184 15.8519 19.8581 15.3516 19 15.13" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M16 3.13C16.8604 3.35031 17.623 3.85071 18.1676 4.55232C18.7122 5.25392 19.0078 6.11683 19.0078 7.005C19.0078 7.89318 18.7122 8.75608 18.1676 9.45769C17.623 10.1593 16.8604 10.6597 16 10.88" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="feature-card-title">Real-time collaboration</p>
+                    <p class="feature-card-text">Comment, assign, and edit together every change syncs instantly across the team.</p>
+                </div>
+                <div class="feature-card-item">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3 3V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H21" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M18 17V9" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13 17V5" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 17V14" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="feature-card-title">Insightful reports</p>
+                    <p class="feature-card-text">Track velocity and workload with dashboards that turn activity into clarity</p>
+                </div>
+                <div class="feature-card-item">
+                    <div class="feature-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M3.99999 14C3.81076 14.0007 3.62522 13.9476 3.46495 13.847C3.30467 13.7464 3.17623 13.6024 3.09454 13.4317C3.01286 13.261 2.98129 13.0706 3.00349 12.8827C3.0257 12.6948 3.10077 12.517 3.21999 12.37L13.12 2.17004C13.1943 2.08432 13.2955 2.0264 13.407 2.00577C13.5185 1.98515 13.6337 2.00305 13.7337 2.05654C13.8337 2.11004 13.9126 2.19594 13.9573 2.30015C14.0021 2.40436 14.0101 2.52069 13.98 2.63004L12.06 8.65004C12.0034 8.80156 11.9844 8.96456 12.0046 9.12505C12.0248 9.28553 12.0837 9.43872 12.1761 9.57147C12.2685 9.70421 12.3918 9.81256 12.5353 9.8872C12.6788 9.96185 12.8382 10.0006 13 10H20C20.1892 9.9994 20.3748 10.0525 20.535 10.1531C20.6953 10.2537 20.8238 10.3977 20.9054 10.5684C20.9871 10.7391 21.0187 10.9295 20.9965 11.1174C20.9743 11.3053 20.8992 11.4831 20.78 11.63L10.88 21.83C10.8057 21.9158 10.7045 21.9737 10.593 21.9943C10.4815 22.0149 10.3663 21.997 10.2663 21.9435C10.1663 21.89 10.0874 21.8041 10.0427 21.6999C9.99791 21.5957 9.98991 21.4794 10.02 21.37L11.94 15.35C11.9966 15.1985 12.0156 15.0355 11.9954 14.875C11.9752 14.7145 11.9163 14.5614 11.8239 14.4286C11.7315 14.2959 11.6082 14.1875 11.4647 14.1129C11.3212 14.0382 11.1617 13.9995 11 14H3.99999Z" stroke="#4F39F6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <p class="feature-card-title">Powerful automations</p>
+                    <p class="feature-card-text">Automate the busywork with rules that move tasks, notify owners, and more.</p>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section class="background-light-grey comparison-section-wrapper encenter-section">
+        <section id="tool-comparison-section" class="padded-content-area">
+            <p class="section-subtitle">Why Nimbus</p>
+            <p class="section-main-title">A simpler way to run your team</p>
+            <p class="section-description-text">See how Nimbus compares to the tools teams usually patch together.</p>
+
+            <div class="comparison-table-wrapper">
+                <table class="competitor-comparison-table">
+                    <colgroup>
+                        <col class="col-task">
+                        <col class="col-spreadsheets">
+                        <col class="col-email">
+                        <col class="col-nimbus">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="align-left">Task</th>
+                            <th>Spreadsheets</th>
+                            <th>Email</th>
+                            <th class="nimbus-header">Nimbus</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-row-highlight">
+                            <td class="align-left">See everyone's tasks in one place</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td class="highlighted-table-cell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Visual timelines & due dates</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td class="highlighted-table-cell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr class="table-row-highlight">
+                            <td class="align-left">Real-time updates</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td class="highlighted-table-cell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Automated reminders</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td class="highlighted-table-cell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr class="table-row-highlight">
+                            <td class="align-left">Progress reports</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M15 5L5 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M5 5L15 15" stroke="#D1D5DC" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td class="highlighted-table-cell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="align-left">Set up in minutes</td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                            <td class="highlighted-table-cell">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                    <path d="M16.6667 5L7.50004 14.1667L3.33337 10" stroke="#4F39F6" stroke-width="1.66667" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section class="statistics-section-wrapper encenter-section">
+        <section class="statistics-metrics-grid">
+            <div>
+                <p>12k+</p>
+                <p>Teams onboard</p>
+            </div>
+            <div>
+                <p>4.9/5</p>
+                <p>Average rating</p>
+            </div>
+            <div>
+                <p>38%</p>
+                <p>Faster delivery</p>
+            </div>
+            <div>
+                <p>99%</p>
+                <p>Uptime SLA</p>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section class="user-reviews-wrapper encenter-section">
+        <section id="user-reviews-section" class="padded-content-area">
+            <p class="section-subtitle">Testimonials</p>
+            <p class="section-main-title">Loved by teams everywhere</p>
+
+            <div class="reviews-grid-container">
+                <div class="review-card-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M18.6667 3.5C18.0478 3.5 17.4543 3.74583 17.0167 4.18342C16.5792 4.621 16.3333 5.21449 16.3333 5.83333V12.8333C16.3333 13.4522 16.5792 14.0457 17.0167 14.4832C17.4543 14.9208 18.0478 15.1667 18.6667 15.1667C18.9761 15.1667 19.2728 15.2896 19.4916 15.5084C19.7104 15.7272 19.8333 16.0239 19.8333 16.3333V17.5C19.8333 18.1188 19.5875 18.7123 19.1499 19.1499C18.7123 19.5875 18.1188 19.8333 17.5 19.8333C17.1906 19.8333 16.8938 19.9562 16.675 20.175C16.4562 20.3938 16.3333 20.6906 16.3333 21V23.3333C16.3333 23.6428 16.4562 23.9395 16.675 24.1583C16.8938 24.3771 17.1906 24.5 17.5 24.5C19.3565 24.5 21.137 23.7625 22.4497 22.4497C23.7625 21.137 24.5 19.3565 24.5 17.5V5.83333C24.5 5.21449 24.2542 4.621 23.8166 4.18342C23.379 3.74583 22.7855 3.5 22.1667 3.5H18.6667Z" stroke="#A3B3FF" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.83333 3.5C5.21449 3.5 4.621 3.74583 4.18342 4.18342C3.74583 4.621 3.5 5.21449 3.5 5.83333V12.8333C3.5 13.4522 3.74583 14.0457 4.18342 14.4832C4.621 14.9208 5.21449 15.1667 5.83333 15.1667C6.14275 15.1667 6.4395 15.2896 6.65829 15.5084C6.87708 15.7272 7 16.0239 7 16.3333V17.5C7 18.1188 6.75417 18.7123 6.31658 19.1499C5.879 19.5875 5.28551 19.8333 4.66667 19.8333C4.35725 19.8333 4.0605 19.9562 3.84171 20.175C3.62292 20.3938 3.5 20.6906 3.5 21V23.3333C3.5 23.6428 3.62292 23.9395 3.84171 24.1583C4.0605 24.3771 4.35725 24.5 4.66667 24.5C6.52318 24.5 8.30366 23.7625 9.61641 22.4497C10.9292 21.137 11.6667 19.3565 11.6667 17.5V5.83333C11.6667 5.21449 11.4208 4.621 10.9832 4.18342C10.5457 3.74583 9.95217 3.5 9.33333 3.5H5.83333Z" stroke="#A3B3FF" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>
+                        "Nimbus replaced three tools for us. Our team finally has one place to plan and track everything."
+                    </p>
+                    <div class="reviewer-profile-info">
+                        <img src="src/assets/sofia-reyes.png" alt="" class="reviewer-avatar reviewer-avatar-sofia">
+                        <div>
+                            <p>Sofia Reyes</p>
+                            <p>Head of Product, Globex</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M18.6667 3.5C18.0478 3.5 17.4543 3.74583 17.0167 4.18342C16.5792 4.621 16.3333 5.21449 16.3333 5.83333V12.8333C16.3333 13.4522 16.5792 14.0457 17.0167 14.4832C17.4543 14.9208 18.0478 15.1667 18.6667 15.1667C18.9761 15.1667 19.2728 15.2896 19.4916 15.5084C19.7104 15.7272 19.8333 16.0239 19.8333 16.3333V17.5C19.8333 18.1188 19.5875 18.7123 19.1499 19.1499C18.7123 19.5875 18.1188 19.8333 17.5 19.8333C17.1906 19.8333 16.8938 19.9562 16.675 20.175C16.4562 20.3938 16.3333 20.6906 16.3333 21V23.3333C16.3333 23.6428 16.4562 23.9395 16.675 24.1583C16.8938 24.3771 17.1906 24.5 17.5 24.5C19.3565 24.5 21.137 23.7625 22.4497 22.4497C23.7625 21.137 24.5 19.3565 24.5 17.5V5.83333C24.5 5.21449 24.2542 4.621 23.8166 4.18342C23.379 3.74583 22.7855 3.5 22.1667 3.5H18.6667Z" stroke="#A3B3FF" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.83333 3.5C5.21449 3.5 4.621 3.74583 4.18342 4.18342C3.74583 4.621 3.5 5.21449 3.5 5.83333V12.8333C3.5 13.4522 3.74583 14.0457 4.18342 14.4832C4.621 14.9208 5.21449 15.1667 5.83333 15.1667C6.14275 15.1667 6.4395 15.2896 6.65829 15.5084C6.87708 15.7272 7 16.0239 7 16.3333V17.5C7 18.1188 6.75417 18.7123 6.31658 19.1499C5.879 19.5875 5.28551 19.8333 4.66667 19.8333C4.35725 19.8333 4.0605 19.9562 3.84171 20.175C3.62292 20.3938 3.5 20.6906 3.5 21V23.3333C3.5 23.6428 3.62292 23.9395 3.84171 24.1583C4.0605 24.3771 4.35725 24.5 4.66667 24.5C6.52318 24.5 8.30366 23.7625 9.61641 22.4497C10.9292 21.137 11.6667 19.3565 11.6667 17.5V5.83333C11.6667 5.21449 11.4208 4.621 10.9832 4.18342C10.5457 3.74583 9.95217 3.5 9.33333 3.5H5.83333Z" stroke="#A3B3FF" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>
+                        "The timeline view changed how we run sprints. We catch blockers days earlier than before."
+                    </p>
+                    <div class="reviewer-profile-info">
+                        <img src="src/assets/daniel-okafor.png" alt="" class="reviewer-avatar reviewer-avatar-daniel">
+                        <div>
+                            <p>Daniel Okafor</p>
+                            <p>Engineering Lead, Initech</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="review-card-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none">
+                        <path d="M18.6667 3.5C18.0478 3.5 17.4543 3.74583 17.0167 4.18342C16.5792 4.621 16.3333 5.21449 16.3333 5.83333V12.8333C16.3333 13.4522 16.5792 14.0457 17.0167 14.4832C17.4543 14.9208 18.0478 15.1667 18.6667 15.1667C18.9761 15.1667 19.2728 15.2896 19.4916 15.5084C19.7104 15.7272 19.8333 16.0239 19.8333 16.3333V17.5C19.8333 18.1188 19.5875 18.7123 19.1499 19.1499C18.7123 19.5875 18.1188 19.8333 17.5 19.8333C17.1906 19.8333 16.8938 19.9562 16.675 20.175C16.4562 20.3938 16.3333 20.6906 16.3333 21V23.3333C16.3333 23.6428 16.4562 23.9395 16.675 24.1583C16.8938 24.3771 17.1906 24.5 17.5 24.5C19.3565 24.5 21.137 23.7625 22.4497 22.4497C23.7625 21.137 24.5 19.3565 24.5 17.5V5.83333C24.5 5.21449 24.2542 4.621 23.8166 4.18342C23.379 3.74583 22.7855 3.5 22.1667 3.5H18.6667Z" stroke="#A3B3FF" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M5.83333 3.5C5.21449 3.5 4.621 3.74583 4.18342 4.18342C3.74583 4.621 3.5 5.21449 3.5 5.83333V12.8333C3.5 13.4522 3.74583 14.0457 4.18342 14.4832C4.621 14.9208 5.21449 15.1667 5.83333 15.1667C6.14275 15.1667 6.4395 15.2896 6.65829 15.5084C6.87708 15.7272 7 16.0239 7 16.3333V17.5C7 18.1188 6.75417 18.7123 6.31658 19.1499C5.879 19.5875 5.28551 19.8333 4.66667 19.8333C4.35725 19.8333 4.0605 19.9562 3.84171 20.175C3.62292 20.3938 3.5 20.6906 3.5 21V23.3333C3.5 23.6428 3.62292 23.9395 3.84171 24.1583C4.0605 24.3771 4.35725 24.5 4.66667 24.5C6.52318 24.5 8.30366 23.7625 9.61641 22.4497C10.9292 21.137 11.6667 19.3565 11.6667 17.5V5.83333C11.6667 5.21449 11.4208 4.621 10.9832 4.18342C10.5457 3.74583 9.95217 3.5 9.33333 3.5H5.83333Z" stroke="#A3B3FF" stroke-width="2.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <p>
+                        "It's the rare tool that's powerful but never gets in the way. Onboarding took minutes."
+                    </p>
+                    <div class="reviewer-profile-info">
+                        <img src="src/assets/mia-chen.png" alt="" class="reviewer-avatar reviewer-avatar-mia">
+                        <div>
+                            <p>Mia Chen</p>
+                            <p>Operations Manager, Hooli</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>  
+    <hr>
+
+    <section class="background-light-grey pricing-plans-wrapper encenter-section">
+        <section id="pricing-plans-section" class="padded-content-area">
+            <p class="section-subtitle">Pricing</p>
+            <p class="section-main-title">Simple, transparent pricing</p>
+            <p class="section-description-text">Start free and upgrade as your team grows. No hidden fees, cancel anytime.</p>
+
+            <div class="pricing-cards-container">
+                <div class="pricing-cards-grid">
+                    <div class="subscription-tier-card">
+                        <h3>Starter</h3>
+                        <p class="subscription-tier-subtitle">For individuals getting organized.</p>
+                        <div>
+                            <p>$0</p>
+                            <p>free forever</p>
+                        </div>
+                        <div class="subscribe-action-button">Get started</div>
+                        <div class="tier-features-list">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Up to 3 projects</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Basic boards</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>1 GB storage</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Community support</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="highlighted-tier-card subscription-tier-card">
+                        <h3>Pro</h3>
+                        <p class="subscription-tier-subtitle">For growing teams that ship fast.</p>
+                        <div>
+                            <p>$12</p>
+                            <p>/user / mo</p>
+                        </div>
+                        <div class="primary-subscribe-button">Start Pro trial</div>
+                        <div class="tier-features-list">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Unlimited projects</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Timeline & calendar views</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Automations</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Advanced reports</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Priority support</p>
+                            </div>
+                        </div>
+                        <p class="most-popular-badge">Most Popular</p>
+                    </div>
+
+                    <div class="subscription-tier-card">
+                        <h3>Enterprise</h3>
+                        <p class="subscription-tier-subtitle">For organizations at scale.</p>
+                        <div>
+                            <p>$24</p>
+                            <p>/user / mo</p>
+                        </div>
+                        <div class="subscribe-action-button">Contact sales</div>
+                        <div class="tier-features-list">
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Everything in Pro</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>SSO & SCIM</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Audit logs</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>Dedicated manager</p>
+                            </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M13.3333 4L6.00001 11.3333L2.66667 8" stroke="#4F39F6" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>99.9% uptime SLA</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="compare-features-link-wrapper">
+                    <div class="compare-features-link-inner">
+                        <p>Compare all features →</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section class="team-gallery-wrapper encenter-section">
+        <section class="team-gallery-content padded-content-area">
+            <p class="section-subtitle">Inside Nimbus</p>
+            <p class="section-main-title">Where great teamwork happens</p>
+            <div class="gallery-images-container">
+                <div class="gallery-images-grid">
+                    <div class="gallery-grid-tall-column">
+                        <img class="gallery-image-full-column" src="src/assets/team-collaborating-in-an-office.png" alt="">
+                    </div>
+                    <div class="gallery-grid-split-column">
+                        <div>
+                            <img class="gallery-image-split-column" src="src/assets/group-working-on-laptops.png" alt="">
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="gallery-grid-split-column">
+                        <div>
+                            <img class="gallery-image-split-column" src="src/assets/colleagues-around-a-table.png" alt="">
+                        </div>
+                        <div></div>
+                    </div>
+                    <div class="gallery-image-team gallery-grid-tall-column">
+                        <img class="gallery-image-full-column" src="src/assets/creative-team-meeting.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section class="frequently-asked-questions-wrapper background-light-grey encenter-section">
+        <section id="faq-accordion-section" class="padded-content-area">
+            <p class="section-subtitle">Faq</p>
+            <p class="section-main-title">Frequently asked questions</p>
+            <div class="faq-accordion-container">
+                <div class="faq-accordion-item">
+                    <details>
+                        <summary>
+                            <span>Is there a free plan?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 6L8 10L12 6" stroke="#6B7280" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </summary>
+                        <p class="faq-answer-text">Is there a free plan? Is there a free plan?</p>
+                    </details>
+                </div>
+                <div class="faq-accordion-item">
+                    <details>
+                        <summary>
+                            <span>Can I change plans later?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 6L8 10L12 6" stroke="#6B7280" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </summary>
+                        <p class="faq-answer-text">Can I change plans later? Can I change plans later?</p>
+                    </details>
+                </div>
+                <div class="faq-accordion-item">
+                    <details>
+                        <summary>
+                            <span>Do you offer discounts for annual billing?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 6L8 10L12 6" stroke="#6B7280" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </summary>
+                        <p class="faq-answer-text">Do you offer discounts for annual billing? Do you offer discounts for annual billing?</p>
+                    </details>
+                </div>
+                <div class="faq-accordion-item">
+                    <details>
+                        <summary>
+                            <span>How does the 14-day Pro trial work?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 6L8 10L12 6" stroke="#6B7280" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </summary>
+                        <p class="faq-answer-text">How does the 14-day Pro trial work? How does the 14-day Pro trial work?</p>
+                    </details>
+                </div>
+                <div class="faq-accordion-item">
+                    <details>
+                        <summary>
+                            <span>Is my data secure?</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <path d="M4 6L8 10L12 6" stroke="#6B7280" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </summary>
+                        <p class="faq-answer-text">Is my data secure? Is my data secure?</p>
+                    </details>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>     
+
+    <section class="call-to-action-wrapper encenter-section">
+        <section class="call-to-action-content">
+            <div class="cta-banner-container">
+                <div class="cta-background-decoration-top"></div>
+                <div class="cta-background-decoration-bottom"></div>
+                <div class="cta-content-inner">
+                    <div class="cta-title-wrapper"><p>Ready to get your team in sync?</p></div>
+                    <div class="cta-description-wrapper"><p>Join thousands of teams using Nimbus to plan, track, and ship their best work.</p></div>
+                    <div class="cta-action-buttons">
+                        <button>Start for free <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path d="M3.33331 8H12.6666" stroke="#3730A3" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M8 3.3335L12.6667 8.00016L8 12.6668" stroke="#3730A3" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                        <button>View pricing</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <hr>
+
+    <section class="site-footer-wrapper background-light-grey encenter-section">
+        <footer>
+            <div class="footer-navigation-grid">
+                <div class="footer-nav-column">
+                    <a href="index.html" class="brand-logo-link">
+                        <div>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="10" viewBox="0 0 13 10" fill="none">
+                                <path d="M2.70038 9.11613C1.93451 9.03925 1.2275 8.67095 0.725574 8.08739C0.223653 7.50384 -0.0347688 6.74969 0.00376492 5.98094C0.0422987 5.21219 0.374839 4.48767 0.9326 3.95723C1.49036 3.42679 2.23066 3.13103 3.00038 3.13113C3.23303 2.19397 3.78708 1.36813 4.566 0.797468C5.34493 0.226803 6.29937 -0.0525207 7.26307 0.00815629C8.22676 0.0688333 9.13863 0.465665 9.83983 1.12952C10.541 1.79338 10.9871 2.68219 11.1004 3.64113C11.6855 3.86219 12.1817 4.26963 12.5124 4.8006C12.8431 5.33158 12.9899 5.95659 12.9302 6.57926C12.8705 7.20193 12.6075 7.78765 12.182 8.24611C11.7564 8.70457 11.1919 9.01029 10.5754 9.11613H2.70038Z" fill="white"/>
+                            </svg>
+                        </div>
+                        <p>Nimbus</p>
+                    </a>
+                    <p class="footer-brand-description">Nimbus keeps your team aligned with delightfully simple task management. Plan, track, and ship work — together.</p>
+                    <form action="">
+                        <input type="email" name="">
+                        <button>Subscribe</button>
+                    </form>
+                </div>
+                <div class="footer-nav-column">
+                    <h4>Product</h4>
+                    <ul>
+                        <li>Feature</li>
+                        <li>Integrations</li>
+                        <li>Pricing</li>
+                        <li>Changelog</li>
+                        <li>Roadmap</li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h4>Company</h4>
+                    <ul>
+                        <li>About</li>
+                        <li>Career</li>
+                        <li>Blog</li>
+                        <li>Press</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+                <div class="footer-nav-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li>Docs</li>
+                        <li>Help center</li>
+                        <li>Community</li>
+                        <li>API</li>
+                        <li>Status</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom-bar">
+                <hr>
+                <div class="footer-copyright-and-socials">
+                    <p>© 2026 Nimbus Labs, Inc. All rights reserved.</p>
+                    <div class="social-media-links">
+                        <div class="social-media-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M16.5 3.00002C16.5 3.00002 15.975 4.57502 15 5.55002C16.2 13.05 7.95 18.525 1.5 14.25C3.15 14.325 4.8 13.8 6 12.75C2.25 11.625 0.375 7.20002 2.25 3.75002C3.9 5.70002 6.45 6.82502 9 6.75002C8.325 3.60002 12 1.80002 14.25 3.90002C15.075 3.90002 16.5 3.00002 16.5 3.00002Z" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="social-media-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M11.25 16.5V13.5C11.3543 12.5605 11.0849 11.6176 10.5 10.875C12.75 10.875 15 9.375 15 6.75C15.06 5.8125 14.7975 4.89 14.25 4.125C14.46 3.2625 14.46 2.3625 14.25 1.5C14.25 1.5 13.5 1.5 12 2.625C10.02 2.25 7.97997 2.25 5.99997 2.625C4.49997 1.5 3.74997 1.5 3.74997 1.5C3.52497 2.3625 3.52497 3.2625 3.74997 4.125C3.20387 4.88691 2.93882 5.81459 2.99997 6.75C2.99997 9.375 5.24997 10.875 7.49997 10.875C7.20747 11.2425 6.98997 11.6625 6.86247 12.1125C6.73497 12.5625 6.69747 13.035 6.74997 13.5V16.5" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.75 13.5C3.3675 15 3 12 1.5 12" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="social-media-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M12 6C13.1935 6 14.3381 6.47411 15.182 7.31802C16.0259 8.16193 16.5 9.30653 16.5 10.5V15.75H13.5V10.5C13.5 10.1022 13.342 9.72064 13.0607 9.43934C12.7794 9.15804 12.3978 9 12 9C11.6022 9 11.2206 9.15804 10.9393 9.43934C10.658 9.72064 10.5 10.1022 10.5 10.5V15.75H7.5V10.5C7.5 9.30653 7.97411 8.16193 8.81802 7.31802C9.66193 6.47411 10.8065 6 12 6Z" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M4.5 6.75H1.5V15.75H4.5V6.75Z" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3 4.5C3.82843 4.5 4.5 3.82843 4.5 3C4.5 2.17157 3.82843 1.5 3 1.5C2.17157 1.5 1.5 2.17157 1.5 3C1.5 3.82843 2.17157 4.5 3 4.5Z" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <div class="social-media-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                                <path d="M1.87501 5.25C1.35107 7.72255 1.35107 10.2774 1.87501 12.75C1.94385 13.0011 2.07686 13.2299 2.26096 13.414C2.44506 13.5981 2.67391 13.7312 2.92501 13.8C6.94758 14.4665 11.0524 14.4665 15.075 13.8C15.3261 13.7312 15.5549 13.5981 15.7391 13.414C15.9232 13.2299 16.0562 13.0011 16.125 12.75C16.6489 10.2774 16.6489 7.72255 16.125 5.25C16.0562 4.99891 15.9232 4.77006 15.7391 4.58595C15.5549 4.40185 15.3261 4.26884 15.075 4.2C11.0524 3.53359 6.94759 3.53359 2.92501 4.2C2.67391 4.26884 2.44506 4.40185 2.26096 4.58595C2.07686 4.77006 1.94385 4.99891 1.87501 5.25Z" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.5 11.25L11.25 9L7.5 6.75V11.25Z" stroke="#6A7282" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
